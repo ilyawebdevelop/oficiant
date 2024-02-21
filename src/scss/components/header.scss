@@ -1,0 +1,462 @@
+// Header
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 4;
+
+  &>.container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .logo {
+    img {
+      width: 80px;
+    }
+  }
+
+  &L {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  &W {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &Cart {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: fit-content;
+    img {
+      width: 24px;
+    }
+
+
+    &::after {
+      content: attr(data-count);
+      position: absolute;
+      top: -6px;
+      right: -9px;
+      min-width: 20px;
+      height: 20px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      background: var(--success);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 10px;
+    }
+  }
+
+  .tableNumber {
+    width: 24px;
+    height: 24px;
+    background-color: #2f80ed;
+    color: #fff;
+    font-size: 14px;
+    line-height: 143%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &VerifyEmpty {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow-y: scroll;
+    display: none;
+    padding-top: 56px;
+
+    &.active {
+      display: block;
+      -webkit-animation: shows .3s;
+      animation: shows .3s;
+    }
+
+   
+
+    .numbers {
+      display: flex;
+      column-gap: 26px;
+
+      @media(max-width: 370px) {
+        column-gap: 10px;
+        justify-content: space-between;
+      }
+
+      input {
+        width: 64px;
+        height: 64px;
+        border-radius: 10px;
+        background-color: var(--background);
+        font-size: 20px;
+        font-weight: 700;
+        color: #222;
+        text-align: center;
+      }
+    }
+  }
+
+  &ForgotPassword {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow-y: scroll;
+    display: none;
+    padding-top: 56px;
+
+    &.active {
+      display: block;
+      -webkit-animation: shows .3s;
+      animation: shows .3s;
+    }
+
+    .formInput {
+      background: var(--background);
+      border-radius: 8px;
+      height: 48px;
+      padding-left: 16px;
+      padding-right: 16px;
+      width: 100%;
+
+      &Name {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &Register {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow-y: scroll;
+    display: none;
+    padding-top: 56px;
+
+    &.active {
+      display: block;
+      -webkit-animation: shows .3s;
+      animation: shows .3s;
+    }
+
+    .formInput {
+      background: var(--background);
+      border-radius: 8px;
+      height: 48px;
+      padding-left: 16px;
+      padding-right: 16px;
+      width: 100%;
+
+      &Name {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &Authorize {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow-y: scroll;
+    display: none;
+    padding-top: 56px;
+
+    &.active {
+      display: block;
+      -webkit-animation: shows .3s;
+      animation: shows .3s;
+    }
+ 
+  }
+
+  &Sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    overflow-y: scroll;
+    display: none;
+
+
+    &.active {
+      display: block;
+      -webkit-animation: shows .3s;
+      animation: shows .3s;
+    }
+
+    &W {
+      padding-top: 56px;
+      padding-bottom: 80px;
+      min-height: 100%;
+    }
+
+    &Close {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &Top {
+      border-bottom: 1px solid var(--outline);
+      padding-top: 8px;
+      padding-bottom: 8px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 300px;
+      background-color: #fff;
+      z-index: 1;
+
+      .container {
+        padding-right: 16px;
+      }
+    }
+
+    &Profile {
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--outline);
+    }
+
+    &Menu {
+      border: 1px solid var(--outline);
+    }
+  }
+
+  &Nav {
+    &List {
+      li {
+       
+        a {
+          background-size: 20px;
+          background-position: left 20px center;
+          background-repeat: no-repeat;
+          padding-left: 52px;
+          transition: background-color .2s linear, color .2s linear, background-image .2s linear;
+          &:focus,&:hover {
+            background-color: var(--background);
+            color: var(--primary);
+          }       
+        }
+        &.disabled {
+          opacity: .4;
+          pointer-events: none;
+        }
+
+        &.menu-restourant {
+          a {
+            background-image: url('@img/icons/rest-icon.svg');
+            &:hover,&:focus {
+              background-image: url('@img/icons/rest-icon-blue.svg');
+            }
+          }          
+        }
+
+        &.menu-stocks {
+          a {
+            background-image: url('@img/icons/stocks-icon.svg');
+            &:hover,&:focus {
+              background-image: url('@img/icons/stocks-icon-blue.svg');
+            }
+          }         
+        }
+
+        &.menu-reviews {
+          a {
+            background-image: url('@img/icons/reviews-icon.svg');
+            &:hover,&:focus {
+              background-image: url('@img/icons/reviews-icon-blue.svg');
+            }
+          }          
+        }
+
+        &.menu-order {
+          a {
+            background-image: url('@img/icons/order-icon.svg');
+            &:hover,&:focus {
+              background-image: url('@img/icons/order-icon-blue.svg');
+            }
+          }
+          
+        }
+
+        &.menu-profile {
+          a {
+            background-image: url('@img/icons/profile-icon.svg');
+            &:hover,&:focus {
+              background-image: url('@img/icons/profile-icon-blue.svg');
+            }
+          }
+          
+        }
+
+        &.menu-history {
+          a {
+            background-image: url('@img/icons/history-icon.svg');
+            &:hover,&:focus {
+              background-image: url('@img/icons/history-icon-blue.svg');
+            }
+          }
+          
+        }
+
+        &.menu-wishlist {
+          a {
+            position: relative;
+            background-image: url('@img/icons/wishlist-icon.svg');
+            &:hover,&:focus {
+              background-image: url('@img/icons/wishlist-icon-blue.svg');
+            }
+            &::before {
+              content: attr(data-count);
+              position: absolute;
+              right: 20px;
+              top: 50%;
+              transform: translateY(-50%);
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 133%;
+              color: var(--tetriary);
+            }
+          }
+          
+        }
+
+
+        a {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.headerLang {
+  background: url('@img/icons/select-icon.svg') no-repeat right top 3px / 16px;
+  padding-right: 20px;
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
+
+.headerAuthorize,
+.headerRegister,
+.headerForgotPassword,
+.headerVerifyEmpty {
+  padding-bottom: 100px;
+
+  .headerSidebarTop {
+    padding-top: 17px;
+    padding-bottom: 18px;
+  }
+}
+
+.authorizeSocialsList {
+  column-gap: 32px;
+  row-gap: 10px;
+}
+
+.authorizeSocialsName {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--gray);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+
+  span {
+    width: fit-content;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &::before {
+    content: '';
+    height: 1px;
+    background-color: var(--gray);
+  }
+
+  &::after {
+    content: '';
+    height: 1px;
+    background-color: var(--gray);
+  }
+}
+
+.authorizeForm {
+  .formInput {
+    background: var(--background);
+    border-radius: 8px;
+    height: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    &:focus {
+      background-color: transparent;
+      border: 1px solid var(--black);
+    }
+
+    &Name {
+      font-size: 12px;
+    }
+  }
+
+}
+.headerSidebarNameProfile {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}

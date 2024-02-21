@@ -1,0 +1,325 @@
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="headerW">
+      <div class="headerL">
+        <div class="hamburger" id="toggle">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </div><!-- /Hamburger Menu -->
+        <div class="tableNumber">
+          12
+        </div>
+      </div>
+
+      <a href="/" class="headerLogo logo">
+        <img src="@img/admin/logo/logo.svg" alt="logo">
+      </a>
+      <a href="#" class="headerCart" data-count="5">
+        <img src="@img/icons/cart-black.svg" alt="cart">
+      </a>
+    </div>
+  </div>
+  <div class="headerSidebar">
+
+    <div class="d-flex flex-column justify-content-between headerSidebarW">
+
+      <div class="d-block">
+        <div class="headerSidebarTop headerSidebarFixed">
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="headerLang">
+                <select name="language" id="language">
+                  <option value="rus">Rus</option>
+                  <option value="eng">Eng</option>
+                </select>
+              </div>
+              <button class="headerSidebarClose">
+                <img src="@img/icons/close-black.svg" alt="filter">
+              </button>
+            </div>
+          </div>
+        </div><!-- /headerSidebarTop -->
+
+        <div class="headerSidebarProfile pt-3 pb-3">
+
+          <div class="container">
+            <div class="fw-medium mb-2 fz-16">Профиль</div>
+          </div>          
+
+          <!-- Раскомментировать для вывода пунктов меню под заголовком ПРОФИЛЬ -->
+          <nav class="headerMenuNav headerNav">
+            <ul class="headerNavList">
+              <li class="menu-profile"><a href="#">Мой профиль</a></li>
+              <li class="menu-history disabled"><a href="#">История заказов</a></li>
+              <li class="menu-wishlist"><a data-count="3" href="#">Избранное</a></li>
+            </ul>
+          </nav>
+          <!-- Раскомментировать код выше для вывода пунктов меню под заголовком ПРОФИЛЬ -->
+
+          <div class="container">
+            <button class="headerAuthorizeBtn button button--blue mt-3 mb-3">
+              Авторизация
+            </button>
+          </div>
+
+        </div><!-- /headerSidebarProfile -->
+
+        <div class="headerSidebarMenu headerMenu pt-3 pb-3">
+
+          <div class="container">
+            <div class="fw-medium mb-2 fz-16">Ресторан</div>
+          </div>
+
+          <nav class="headerMenuNav headerNav">
+            <ul class="headerNavList">
+              <li class="menu-restourant"><a href="#">О ресторане</a></li>
+              <li class="menu-stocks"><a href="#">Акции и новости</a></li>
+              <li class="menu-reviews"><a href="#">Отзывы</a></li>
+              <li class="menu-order"><a href="#">Обратная связь</a></li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+      <div class="headerSidebarBottom pt-3">
+        <div class="container">
+          <div class="d-flex flex-column gap-2 mb-4 mt-4">
+            <span class="headerSidebarNameProfile">Имя пользователя</span>
+            <a class="headerSidebarLogout" href="#">Выйти</a>
+
+          </div>
+          <div class="d-flex flex-column gap-2 fz-10">
+            <a href="#">
+              Политика конфиденциальности
+            </a>
+            <div class="copyright">© 2024 Название компании</div>
+            <a href="#" class="develop"> Разработка сайта – Вангер.рф</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div><!-- /headerSidebar -->
+
+  <div class="headerAuthorize">
+
+    <div class="headerSidebarTop headerSidebarFixed w-100">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <button class="headerAuthorizeBack">
+            Войти
+          </button>
+          <button class="headerSidebarRegisterBtn">
+            Зарегистрироваться
+          </button>
+        </div>
+      </div>
+    </div><!-- /headerSidebarTop -->
+
+    <div class="authorizeFormW pt-4">
+      <div class="container">
+        <form class="headerAuthorizeForm authorizeForm" action="#">
+          <div class="inputW mb-3">
+            <div class="formInputName mb-2 text-uppercase fw-medium">
+              Номер телефона
+            </div>
+            <input type="tel" class="formInput" placeholder="+ 7 (___) ___ __ __">
+          </div>
+          <div class="inputW mb-3">
+            <div class="formInputName mb-2 text-uppercase fw-medium">
+              Пароль
+            </div>
+            <input type="password" class="formInput">
+          </div>
+          <a href="#" class="authorizeForgotBtn mb-4 text-center">Забыли пароль?</a>
+          <button class="authorizeBtn button button--lg button--blue w-100">Войти</button>
+          <div class="authorizeSocials mt-5">
+            <div class="authorizeSocialsName gap-2">
+              <span>Войти с помощью</span>
+            </div>
+            <ul class="authorizeSocialsList d-flex flex-wrap justify-content-center mt-4">
+              <li>
+                <a href="#">
+                  <img src="@img/admin/socials/fb.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="@img/admin/socials/vk.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="@img/admin/socials/google.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="@img/admin/socials/yandex.svg" alt="icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+  </div><!-- /headerAuthorize -->
+
+  <div class="headerRegister">
+
+    <div class="headerSidebarTop headerSidebarFixed w-100">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <button class="headerRegisterBack">
+            Зарегистрироваться
+          </button>
+          <button class="headerSidebarAuthorizeBtn">
+            Войти
+          </button>
+        </div>
+      </div>
+    </div><!-- /headerSidebarTop -->
+
+    <div class="authorizeFormW pt-4">
+      <div class="container">
+        <form class="headerAuthorizeForm authorizeForm" action="#">
+          <div class="inputW mb-3">
+            <div class="formInputName mb-2 text-uppercase fw-medium">
+              Имя
+            </div>
+            <input type="text" class="formInput" placeholder="Как к вам обращаться">
+          </div>
+          <div class="inputW mb-3">
+            <div class="formInputName mb-2 text-uppercase fw-medium">
+              Номер телефона
+            </div>
+            <input type="tel" class="formInput" placeholder="+ 7 (___) ___ __ __">
+          </div>
+          <div class="inputW mb-3">
+            <div class="formInputName mb-2 text-uppercase fw-medium">
+              Пароль
+            </div>
+            <input type="password" class="formInput" placeholder="**********">
+          </div>
+          <div class="inputW mb-3">
+            <div class="formInputName mb-2 text-uppercase fw-medium">
+              повторите Пароль
+            </div>
+            <input type="password" class="formInput" placeholder="**********">
+          </div>
+          <button class="authorizeBtn button button--lg button--blue w-100 mt-4">Регистрация</button>
+          <div class="authorizeSocials mt-5">
+            <div class="authorizeSocialsName gap-2">
+              <span>Войти с помощью</span>
+            </div>
+            <ul class="authorizeSocialsList d-flex flex-wrap justify-content-center mt-4">
+              <li>
+                <a href="#">
+                  <img src="@img/admin/socials/fb.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="@img/admin/socials/vk.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="@img/admin/socials/google.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="@img/admin/socials/yandex.svg" alt="icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+  </div><!-- /headerRegister -->
+
+  <div class="headerForgotPassword">
+    <div class="headerSidebarTop headerSidebarFixed w-100">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <button class="headerForgotPasswordBack">
+            Забыли пароль
+          </button>
+        </div>
+      </div>
+    </div><!-- /headerSidebarTop -->
+
+    <div class="authorizeFormW pt-4">
+      <div class="container">
+        <form class="headerAuthorizeForm authorizeForm" action="#">
+          <div class="inputW mb-3">
+            <div class="formInputName mb-2 text-uppercase fw-medium">
+              Номер телефона
+            </div>
+            <input type="tel" class="formInput" placeholder="+ 7 (___) ___ __ __">
+          </div>
+          <div class="agreement">
+            <input type="checkbox" id="forgotPasswordCheckbox_2" hidden>
+            <label class="d-flex gap-2" for="forgotPasswordCheckbox_2">
+              <div class="rect"></div>
+              <span class="pt-1">Я соглашаюсь на обработку персональных данных и с условиями <a class="d-inline-block"
+                  href="#">Политики конфиденциальности</a> </span>
+            </label>
+          </div>
+          <button class="sendCodeBtn button button--lg button--blue w-100">Отправить код</button>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="headerVerifyEmpty">
+    <div class="headerSidebarTop headerSidebarFixed w-100">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <button class="headerVerifyEmptyBack">
+            Верификация
+          </button>
+        </div>
+      </div>
+    </div><!-- /headerSidebarTop -->
+
+    <div class="authorizeFormW pt-4">
+      <div class="container">
+        <p></p>
+        <form class="headerAuthorizeForm authorizeForm" action="#">
+          <p class="mb-3">
+            Мы отправили Вам код на номер телефона +7 702 955 81 63
+          </p>
+          <div class="inputW mb-2">
+            <div class="formInputName fw-medium d-flex justify-content-between align-items-center">
+              <span class="text-uppercase">код</span>
+              <span>Повторить через 50 с</span>
+            </div>
+          </div>
+          <div class="numbers mb-4">
+            <input type="text" name="n1" maxLength="1">
+            <input type="text" name="n2" maxLength="1">
+            <input type="text" name="n3" maxLength="1">
+            <input type="text" name="n4" maxLength="1">
+          </div>
+          <button class="authorizeBtn button button--lg button--blue w-100" disabled>Проверить</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+</header>

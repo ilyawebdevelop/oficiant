@@ -1,0 +1,267 @@
+.catalog {
+  &Action {
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    &Title {
+      font-size: 20px;
+      line-height: 120%;
+      font-weight: 700;
+    }
+  }
+
+  &Cat {
+    display: flex;
+    column-gap: 4px;
+    overflow-x: scroll;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 4px;
+    &Grid {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &Link {
+      font-size: 12px;
+      line-height: 133%;
+      font-weight: 500;
+      border-radius: 16px;
+      border: 1px solid var(--outline);
+      padding-left: 12px;
+      padding-right: 12px;
+      white-space: nowrap;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      transition: background-color .2s linear, color .2s linear;
+
+      &:hover,
+      &:focus,
+      &.active {
+        background-color: #2F80ED;
+        color: #fff;
+      }
+    }
+  }
+
+  &Grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+  }
+
+  &Card {
+    grid-column: 6 span;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      width: 100%;
+      height: 100%;
+      border: 1px solid var(--outline);
+      border-radius: 16px;
+    }
+
+    &Top {
+      position: relative;
+      z-index: 1;
+    }
+
+    &Bottom {
+      position: relative;
+      z-index: 1;
+      padding-top: 7px;
+      padding-right: 8px;
+      padding-bottom: 8px;
+      padding-left: 8px;
+    }
+
+    &Img {
+
+      img {
+        width: 100%;
+        height: 134px;
+        object-fit: cover;
+        border-radius: 16px;
+      }
+    }
+
+    &Wishlist {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      // background-color: rgba(240, 245, 250, 0.5);
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(240, 245, 250, 0.5) url('@img/icons/fav-off-sm.svg') no-repeat center center / 14px;
+
+      &.active {
+        background: #f3f7fd url('@img/icons/fav-on-sm.svg') no-repeat center center / 14px;
+
+        svg {
+
+          fill-opacity: 1;
+        }
+      }
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &Title {
+      font-size: 12px;
+      line-height: 133%;
+      font-weight: 500;
+      height: 16px;
+      overflow: hidden;
+      -webkit-line-clamp: 1;
+      display: -webkit-box;
+      /* Включаем флексбоксы */
+      -webkit-box-orient: vertical;
+      /* Вертикальная ориентация */
+      color: var(--black);
+    }
+
+    &Descr {
+      font-size: 10px;
+      line-height: 14px;
+      color: var(--gray);
+      height: 29px;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      /* Включаем флексбоксы */
+      -webkit-box-orient: vertical;
+      /* Вертикальная ориентация */
+    }
+
+    &Weight {
+      font-size: 10px;
+      line-height: 12px;
+      color: var(--black);
+
+    }
+
+    &Plus {
+      background-color: #2f80ed;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color .2s linear;
+      &:hover,
+      &:focus {
+        background-color: var(--secondary);
+      }
+     
+    }
+
+    &Content {
+      .catalogCardPrice {
+        font-size: 10px;
+        line-height: 12px;
+        color: var(--secondary-color-black);
+      }
+    }
+
+    &Action {
+      .catalogCardPrice {
+        font-weight: 700;
+      }
+    }
+
+    &Add {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--success);
+      border-radius: 50%;
+      transition: background-color .2s linear;
+      &:hover,
+      &:focus {
+        background-color: #2169c9;
+      }
+    }
+
+  }
+  &Fixed {
+    position: sticky;
+    top: 64px;
+    background-color: #fff;
+    z-index: 2;
+    &.hide {
+      position: unset;
+    }
+  }
+}
+
+.productCardCount {
+  display: flex;
+
+  input {
+    width: 25px;
+    text-align: center;
+    background-color: #F0F5FA;
+    font-weight: 500;
+  }
+}
+
+.productQuantity {
+  &Btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F5FA;
+
+    &:hover,
+    &:focus {
+      svg {
+        stroke: $main-color;
+        fill: $main-color;
+      }
+    }
+
+    svg {
+      stroke: var(--secondary-text-color-black);
+      fill: var(--secondary-text-color-black);
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  &Minus {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+
+  }
+
+  &Plus {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+  }
+}
+.catalogActionFilterClose {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

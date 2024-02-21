@@ -1,0 +1,52 @@
+.news {
+  &Card {
+    &:not(:last-child){
+      margin-bottom: 24px;
+    }
+    &Link {
+
+      h3 {
+        font-weight: 500;
+        transition: color .2s linear;
+
+        &:hover {
+          color: var(--success);
+        }
+      }
+
+    }
+
+    &Descr {
+      max-height: 64px;
+      overflow: hidden;
+      -webkit-line-clamp: 3;
+      display: -webkit-box;
+      line-height: 143%;
+      /* Включаем флексбоксы */
+      -webkit-box-orient: vertical;
+      /* Вертикальная ориентация */
+    }
+
+    &Date {
+      font-size: 12px;
+      line-height: 133%;
+      color: var(--gray);
+    }
+
+    &Img {
+
+      img {
+        height: 127px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: opacity .2s linear;
+
+        &:hover {
+          opacity: .9;
+        }
+      }
+    }
+  }
+
+}

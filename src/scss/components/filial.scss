@@ -1,0 +1,40 @@
+.filial {
+
+  &Item {
+    background: var(--background);
+    border-radius: 32px;
+    padding: 24px;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &Address {
+      font-size: 12px;
+      display: flex;
+      column-gap: 8px;
+      &::before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        background: url('@img/icons/address.svg') no-repeat center center / 16px;
+        position: relative;
+        top: 3px;
+      }
+    }
+
+    &Time {
+      font-size: 12px;
+      display: flex;
+      column-gap: 8px;
+      &::before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        background: url('@img/icons/time.svg') no-repeat center center / 16px;
+        position: relative;
+        top: 3px;
+      }
+    }
+  }
+}

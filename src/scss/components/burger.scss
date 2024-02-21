@@ -1,0 +1,32 @@
+/* Hamburger Menu */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 18px;
+  height: 13px;
+  min-width: 12px;
+  cursor: pointer;
+  position: relative;
+  // transition: background 0.2s linear;  
+
+
+}
+
+.hamburger div { 
+  height: 1px;
+  width: 100%;
+  background: #182548;
+  border-radius: 10px;
+}
+
+.hamburger .meat {
+  width: 100%;
+}
+
+.top-bun.active,
+.meat.active,
+.bottom-bun.active {
+  opacity: 0;
+}

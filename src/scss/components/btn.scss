@@ -1,0 +1,233 @@
+// btn
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 40px;
+  border-radius: 16px;
+  font-weight: 700;
+  padding-left: 44px;
+  padding-right: 44px;
+
+  &--transparent {
+    color: var(--black);
+    border: 1px solid var(--gray);
+    transition: border-color .2s linear, color .2s linear, background .2s linear;
+
+    &:hover {
+      color: var(--tetriary);
+      background: var(--background);
+      border-color: var(--background);
+    }
+
+    &:disabled {
+      border-color: var(--disabled);
+      color: var(--disabled);
+
+    }
+  }
+
+  &--blue {
+    background: var(--primary);
+    color: #fff;
+    transition: background-color .2s linear;
+
+    &:hover,
+    &:focus {
+      background-color: var(--secondary);
+    }
+
+    &:disabled {
+      background-color: var(--disabled);
+    }
+  }
+
+  &--green {
+    background-color: var(--success);
+  }
+
+  &--lg {
+    height: 48px;
+    font-size: 18px;
+
+    &.text--sm {
+      font-size: 14px;
+      line-height: 114%;
+    }
+
+    @media(max-width: 350px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.catFixedBottom {
+  .button {
+    width: 50%;
+  }
+}
+
+.footerNavItemBtn {
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 -2px 12px 2px rgba(24, 37, 72, 0.18);
+  background-color: var(--primary);
+  border-radius: 50%;
+  position: relative;
+  bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.headerSidebarRegisterBtn {
+  color: var(--primary);
+  font-size: 12px;
+  line-height: 133%;
+
+}
+
+.headerAuthorizeBack {
+  padding-left: 32px;
+  background: url('@img/icons/arrow-back.svg') no-repeat left center / 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.authorizeForgotBtn {
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--primary);
+}
+
+.headerRegisterBack {
+  padding-left: 32px;
+  background: url('@img/icons/arrow-back.svg') no-repeat left center / 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.headerSidebarAuthorizeBtn {
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--primary);
+}
+
+.headerForgotPasswordBack {
+  padding-left: 32px;
+  background: url('@img/icons/arrow-back.svg') no-repeat left center / 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.headerVerifyEmptyBack {
+  padding-left: 32px;
+  background: url('@img/icons/arrow-back.svg') no-repeat left center / 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.headerSidebarLogout {
+  color: var(--gray);
+  line-height: 143%;
+}
+
+.productAddToCart {
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    stroke: #fff;
+  }
+
+  img {
+    width: 24px;
+  }
+}
+
+.productAddToWishlist {
+  height: 48px;
+  min-width: 48px;
+  width: 48px;
+  background-color: var(--tetriary);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--tetriary) url('@img/icons/fav-off-sm-white.svg') no-repeat center center / 21px;
+  border: 2px solid var(--tetriary);
+
+  &.active {
+    background: transparent url('@img/icons/fav-on-sm.svg') no-repeat center center / 21px;
+  }
+
+}
+
+.linkMore {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--primary);
+  display: flex;
+  transition: color .2s linear;
+
+  &:hover {
+    color: var(--success);
+  }
+
+  span {
+    transform: translateX(4px);
+  }
+}
+
+.reviewsOrderBtn {
+  background: var(--background);
+  color: var(--tetriary);
+  border-color: var(--background);
+}
+
+.pageHeadBackBtn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chechTeaBtn {
+  color: #fff;
+  font-weight: 500;
+  column-gap: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 36px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: transparent;
+    stroke: #fff;
+  }
+}
+
+.checkPartBtn {
+  column-gap: 8px;
+  font-weight: 500;
+  height: fit-content;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: transparent;
+    stroke: #333333;
+  }
+}

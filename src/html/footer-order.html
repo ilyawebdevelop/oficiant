@@ -1,0 +1,163 @@
+<!-- Footer -->
+<nav class="footerNav footerNav--order">
+  <ul class="footerNavList">
+    <li class="footerNavItem">
+      <a href="#" class="footerNavLink">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#menu"></use>
+        </svg>
+        <div class="footerNavItemName">Меню</div>
+      </a>
+    </li>
+    <li class="footerNavItem active">
+      <a href="#" class="footerNavLink">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#about"></use>
+        </svg>
+        <div class="footerNavItemName">О нас</div>
+      </a>
+    </li>
+    <li class="footerNavItem footerNavItemBtnW">
+      <button class="footerNavItemBtn">
+        <img src="@img/icons/footer-nav-btn.svg" alt="icon">
+      </button>
+    </li>
+    <li class="footerNavItem">
+      <a href="#" class="footerNavLink">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#call"></use>
+        </svg>
+        <div class="footerNavItemName">Вызов</div>
+      </a>
+    </li>
+    <li class="footerNavItem">
+      <a href="#" class="footerNavLink">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#profile"></use>
+        </svg>
+        <div class="footerNavItemName">Профиль</div>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<!-- categories and subcategories -->
+<div class="catFixed topRound">
+  <div class="container">
+    <div class="catFixedW">
+      <div class="d-block">
+        <div class="catalogAction d-flex justify-content-between align-items-center mb-4">
+          <div class="catalogActionTitle">Категории</div>
+          <div class="catalogActionRight d-flex gap-2">
+            <button class="catalogActionFilterClose">
+              <img src="@img/icons/close-black.svg" alt="filter">
+            </button>
+          </div>
+        </div><!-- /catalogAction -->
+
+        <div class="catalogCatGrid mb-3 gap-1">
+          <a href="#" class="catalogCatLink active">Популярные</a>
+          <a href="#" class="catalogCatLink">Горячие блюда</a>
+          <a href="#" class="catalogCatLink">Закуски</a>
+          <a href="#" class="catalogCatLink">Завтраки</a>
+          <a href="#" class="catalogCatLink">Популярные</a>
+          <a href="#" class="catalogCatLink">Горячие блюда</a>
+          <a href="#" class="catalogCatLink">Закуски</a>
+          <a href="#" class="catalogCatLink">Завтраки</a>
+        </div><!-- /catalogCat -->
+        <h3 class="mb-3 mt-4">
+          Подкатегории
+        </h3>
+        <div class="catalogCatGrid mb-3 gap-1">
+          <a href="#" class="catalogCatLink">Популярные</a>
+          <a href="#" class="catalogCatLink">Горячие блюда</a>
+          <a href="#" class="catalogCatLink">Закуски</a>
+          <a href="#" class="catalogCatLink">Завтраки</a>
+          <a href="#" class="catalogCatLink active">Популярные</a>
+          <a href="#" class="catalogCatLink">Горячие блюда</a>
+          <a href="#" class="catalogCatLink">Закуски</a>
+          <a href="#" class="catalogCatLink">Завтраки</a>
+        </div><!-- /catalogCat -->
+
+        <div class="d-flex mt-4">
+          <div class="catFixedSortName">
+            Сортировка:
+          </div>
+          <div class="catFixedSortW">
+            <select name="sort" id="sortCatalog">
+              <option value="1">По умолчанию</option>
+              <option value="2">По уменьшению цены</option>
+              <option value="3">По увеличению цены</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+      <div class="catFixedBottom d-flex gap-2">
+        <button class="button button--transparent">
+          Сбросить
+        </button>
+        <button class="button button--blue">
+          Применить
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal call personal -->
+<div class="callPerson">
+  <div class="container">
+    <h2 class="callPersonTitle h2 mb-3">
+      Вызвать сотрудника
+    </h2>
+    <div class="callPersonGrid pt-3">
+      <div class="row">
+        <div class="col-6">
+          <a class="callPersonItem">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#call-person-1"></use>
+            </svg>
+            <div class="callPersonItemTitle">
+              Официант
+            </div>
+            <span class="bg--green callPersonItemSubtitle">Уже бегу!</span>
+          </a>
+        </div>
+        <div class="col-6">
+          <a class="callPersonItem active">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#call-person-2"></use>
+            </svg>
+            <div class="callPersonItemTitle">
+              Администратор
+            </div>
+            <span class="bg--green callPersonItemSubtitle">Уже бегу!</span>
+          </a>
+        </div>
+        <div class="col-6">
+          <a class="callPersonItem reload">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#call-person-3"></use>
+            </svg>
+            <div class="callPersonItemTitle">
+              Кальянщик
+            </div>
+            <span class="bg--red callPersonItemSubtitle">00:58</span>
+          </a>
+        </div>
+        <div class="col-6">
+          <a class="callPersonItem">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#call-person-4"></use>
+            </svg>
+            <div class="callPersonItemTitle">
+              Сомелье
+            </div>
+            <span class="bg--red callPersonItemSubtitle">00:58</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

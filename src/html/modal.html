@@ -1,0 +1,155 @@
+<!-- modal -->
+<!-- modal-authorize-review -->
+<div class="modal fade" id="modal-authorize-review" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <p class="modalDescr">
+        Оставлять отзывы могут только авторизованные пользователи
+      </p>
+      <div class="h2">Вход</div>
+
+      <form class="headerAuthorizeForm authorizeForm" action="#">
+        <div class="inputW mb-3">
+          <div class="formInputName mb-2 text-uppercase fw-medium">
+            Номер телефона
+          </div>
+          <input type="tel" class="formInput" placeholder="+ 7 (___) ___ __ __">
+        </div>
+        <div class="inputW mb-3">
+          <div class="formInputName mb-2 text-uppercase fw-medium">
+            Пароль
+          </div>
+          <input type="password" class="formInput">
+        </div>
+        <a href="#" class="authorizeForgotBtn mb-4 text-center">Забыли пароль?</a>
+        <button class="authorizeBtn button button--lg button--blue w-100">Войти</button>
+        <div class="authorizeSocials mt-5">
+          <div class="authorizeSocialsName gap-2">
+            <span>Войти с помощью</span>
+          </div>
+          <ul class="authorizeSocialsList d-flex flex-wrap justify-content-center mt-4">
+            <li>
+              <a href="#">
+                <img src="@img/admin/socials/fb.svg" alt="icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="@img/admin/socials/vk.svg" alt="icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="@img/admin/socials/google.svg" alt="icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="@img/admin/socials/yandex.svg" alt="icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="authorizeForgotBtn mt-5 text-center">Зарегистрироваться</a>
+      </form>
+
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+        data-bs-target="#modal-authorize-review">
+        <img src="@img/icons/close-black.svg" alt="icon">
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- modal-tea -->
+<div class="modal modal-tea fade" id="modal-tea" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="h2">Чаевые</div>
+
+      <div class="modal-tea-grid d-flex gap-3">
+        <a href="#" class="modal-tea-item d-flex flex-column align-items-center gap-3">
+          <img class="tea-item-icon" src="@img/icons/check-1.svg" alt="icon">
+          <span class="tea-item-text text-center fw-medium text--sm">
+            Добавить к&nbsp;текущему счёту
+          </span>
+        </a>
+        <a href="#" class="modal-tea-item d-flex flex-column align-items-center gap-3">
+          <img class="tea-item-icon" src="@img/icons/check-2.svg" alt="icon">
+          <span class="tea-item-text text-center fw-medium text--sm">
+            Перевести
+            по&nbsp;номеру телефона
+          </span>
+        </a>
+      </div>
+
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-tea">
+        <img src="@img/icons/close-black.svg" alt="icon">
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- modal-check -->
+<div class="modal modal-check fade" id="modal-check" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <form class="ckeckForm modal-content" action="#">
+      <div class="h2 modal-check-title">Вы запросили счёт</div>
+      <p>Пожалуйста, оцените, понравилось ли вам сегодня обслуживание.</p>
+
+      <div class="reviewsItemStars mb-1">
+        <div class="rating-area">
+          <input type="radio" id="star-order_1" name="rating_order" value="5">
+          <label for="star-order_1" title="Оценка «5»"></label>
+          <input type="radio" id="star-order_2" name="rating_order" value="4">
+          <label for="star-order_2" title="Оценка «4»"></label>
+          <input type="radio" id="star-order_3" name="rating_order" value="3">
+          <label for="star-order_3" title="Оценка «3»"></label>
+          <input type="radio" id="star-order_4" name="rating_order" value="2">
+          <label for="star-order_4" title="Оценка «2»"></label>
+          <input type="radio" id="star-order_5" name="rating_order" value="1">
+          <label for="star-order_5" title="Оценка «1»"></label>
+        </div>
+      </div>
+
+      <div class="d-flex gap-2 orderBtnW mt-4">
+        <button class="button button--transparent px-2" data-bs-dismiss="modal" aria-label="Close"
+          data-bs-target="#modal-check">
+          Не оценивать
+        </button>
+        <button class="button button--blue px-2">
+          Оценить
+        </button>
+      </div>
+
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-check">
+        <img src="@img/icons/close-black.svg" alt="icon">
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- modal-table -->
+<div class="modal modal-table fade" id="modal-table" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <form class="ckeckForm modal-content" action="#">
+      <div class="h2 text-center modal-table-title">Добро пожаловать!</div>
+
+      <div class="modal-table-round">
+        <img src="@img/icons/table.svg" alt="table">
+        <span class="modal-table-name">Ваш столик</span>
+        <span class="modal-table-number">№12</span>
+      </div>
+
+      <a href="#" class="button button--blue button--lg w-100" data-bs-dismiss="modal" aria-label="Close"
+        data-bs-target="#modal-table">Перейти к меню</a>
+
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-table">
+        <img src="@img/icons/close-black.svg" alt="icon">
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+.order {
+  &Form {
+    margin-top: 16px;
+    .agreement {
+      margin-top: 13px;
+      label {
+        top: 4px;
+      }
+    }
+  }
+}
+.orderBtnW{
+  .button {
+    width: 50%;
+  }
+}
+.inputDirW {
+  display: none;
+  &.active {
+    display: block;
+  }
+}

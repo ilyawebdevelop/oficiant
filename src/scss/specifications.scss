@@ -1,0 +1,420 @@
+// Specifications
+* {
+  box-sizing: border-box;
+}
+
+*::after {
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: $main-color;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (max-width: 991px) {
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.hidden {
+  overflow: hidden
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+}
+
+.form-input {
+  height: 58px;
+  border-radius: 10px;
+  border: 1px solid #838383;
+  background-color: #ffffff;
+  width: 530px;
+  padding-left: 27px;
+  font-size: 16px;
+
+  @media(max-width: 1199px) {
+    padding-left: 24px;
+  }
+
+  &::placeholder {
+    color: #b0b0b0;
+    font-size: 16px;
+  }
+}
+
+.max-130 {
+  max-width: 154px;
+  height: 20px;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  /* Включаем флексбоксы */
+  -webkit-box-orient: vertical;
+  /* Вертикальная ориентация */
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fz-10 {
+  font-size: 10px;
+}
+
+.fz-16 {
+  font-size: 16px;
+}
+
+.section-title {
+  margin-bottom: 40px;
+  color: #1C1F63;
+
+  @media (max-width: 991px) {
+    margin-bottom: 24px;
+  }
+}
+
+.section-title-page {
+  color: #0E1A2F;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  // overflow: hidden;
+  background-color: #fff;
+  padding-bottom: 80px;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  padding: 0 var(--container-offset);
+  // max-width: var(--container-width);
+  // margin: 0 auto;
+
+  @media (max-width: 575px) {
+    padding: 0 20px;
+  }
+}
+
+.container-fluid {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family;
+  color: #333;
+  font-weight: 700;
+}
+
+.h1 {
+  font-size: 20px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+h2 {
+  // font-size: 42px;
+  // line-height: 46px;
+
+  @media(max-width: 991px) {
+    font-size: 20px;
+    line-height: 120%;
+  }
+}
+
+.h2 {
+  font-weight: 700;
+
+  @media(max-width: 991px) {
+    font-size: 20px;
+    line-height: 120%;
+  }
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 35px;
+  color: #333;
+
+  @media (max-width: 991px) {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+.h3 {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 22px;
+  line-height: 28px;
+
+  @media (max-width: 991px) {
+    font-size: 14px;
+    line-height: 143%;
+    font-weight: 500;
+  }
+}
+
+.h4 {
+  font-size: 14px;
+  line-height: 143%;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: $semibold;
+
+  @media(max-width: 991px) {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@-webkit-keyframes shows {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-120px);
+    transform: translateY(-120px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes shows {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-120px);
+    transform: translateY(-120px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.topRound {
+  border-radius: 32px 32px 0 0;
+  margin-top: -54px;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+
+}
+
+.bg--green {
+  background: var(--success);
+  color: #fff;
+}
+
+.bg--red {
+  background: var(--error);
+  color: #fff;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+}
+
+.contentText {
+  p {
+    margin-bottom: 16px;
+  }
+}
+
+.articleIntro {
+  .swiper-slide {
+    min-height: 360px;
+  }
+}
+
+.articleDate {
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--gray);
+}
+
+.formText {
+  height: 148px;
+  border-radius: 8px;
+  padding: 14px 16px;
+  width: 100%;
+  background: var(--background);
+
+  &::placeholder {
+    color: var(--gray);
+  }
+}
+
+.agreement {
+  font-size: 12px;
+  line-height: 133%;
+  margin-bottom: 16px;
+
+  input {
+    &:checked {
+      &+label {
+        .rect {
+          background: url('@img/icons/checkbox-blue.svg') no-repeat center center / 14px;
+          border-color: var(--tetriary);
+        }
+      }
+    }
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  .rect {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--outline);
+  }
+
+  a {
+    color: var(--secondary);
+  }
+}
+
+.formInput {
+  background: var(--background);
+  border-radius: 8px;
+  height: 48px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+  border: 1px solid var(--background);
+
+  &--transparent {
+    background-color: transparent;
+    border: 1px solid var(--black);
+  }
+
+  &:focus {
+    background-color: transparent;
+    border: 1px solid var(--black);
+  }
+
+  &Name {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+
+  }
+}
+
+.pageHead {
+  &W {
+    border-bottom: 1px solid var(--outline);
+  }
+
+  &Back {
+    position: relative;
+    right: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+.pageInfo {
+  font-size: 12px;
+  color: var(--gray);
+  line-height: 133%;
+
+  &W {
+    border-bottom: 1px solid var(--outline);
+  }
+}
+
+.text--blue {
+  color: var(--primary);
+}
+
+.text--gray {
+  color: var(--gray);
+}
+
+.text--sm {
+  font-size: 12px;
+  line-height: normal;
+}
+
+.border-b-gray {
+  border-bottom: 1px solid var(--outline);
+
+}
+
+.checkPayed {
+  font-size: 12px;
+  color: var(--success);
+  padding-left: 20px;
+  background: url('@img/icons/success.svg') no-repeat left center / 16px;
+}
+
+.checkNotPayed {
+  font-size: 12px;
+  color: var(--gray);
+}

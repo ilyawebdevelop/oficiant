@@ -1,0 +1,64 @@
+.about {
+  &Fixed {
+    position: sticky;
+    top: 64px;
+    background-color: #fff;
+    z-index: 2;
+  }
+
+  &Nav {
+    padding-bottom: 4px;
+
+    &List {
+      display: flex;
+      overflow-x: scroll;
+      margin-left: -20px;
+      padding-left: 20px;
+      margin-right: -20px;
+      padding-right: 20px;
+
+      li {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        background: var(--background);
+
+        &:nth-child(1) {
+          border-top-left-radius: 15px;
+          border-bottom-left-radius: 15px;
+          padding-left: 4px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+          padding-right: 4px;
+        }
+
+        &.active {
+          a {
+            background: var(--primary);
+            color: #fff;
+          }
+        }
+
+        a {
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 133%;
+          padding-left: 12px;
+          padding-right: 12px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          white-space: nowrap;
+          transition: color .2s linear, background .2s linear;
+          border-radius: 16px;
+
+          &:hover {
+            background: var(--primary);
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

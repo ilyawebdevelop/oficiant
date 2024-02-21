@@ -1,0 +1,145 @@
+<!-- product -->
+<section class="product" id="product">
+  <div class="productFixed topRound">
+    <div class="container">
+      <div class="productHead d-flex justify-content-between align-items-center py-2">
+        <a class="productHeadBack" href="/"><img src="@img/icons/arrow-back.svg" alt="icon"></a>
+        <div class="price">2990 ₸</div>
+      </div><!-- /productHead -->
+    </div>
+  </div>
+
+  <div class="productW">
+    <div class="container">
+      <h2 class="productTitle py-1 h1">Курица в соусе</h2>
+      <div class="productParamList">
+
+        <div class="productParamItem d-flex justify-content-between">
+          <span class="productParamItemName">Вес:</span>
+          <span class="productParamItemText">250 грамм</span>
+        </div><!-- /productParamItem -->
+
+        <div class="productParamItem d-flex justify-content-between">
+          <span class="productParamItemName">Время приготовления:</span>
+          <span class="productParamItemText">25 минут</span>
+        </div><!-- /productParamItem -->
+        <div class="productParamItem d-flex justify-content-between">
+          <span class="productParamItemName">Калорийность:</span>
+          <span class="productParamItemText">460 Ккал</span>
+        </div><!-- /productParamItem -->
+
+      </div><!-- /productParamList -->
+
+      <h2 class="mb-3 h3">Описание:</h2>
+      <div class="contentText">
+        <p>
+          Нежное куриное филе подается с ароматным сочетанием трав и свежего лимона, которое не только дает блюду
+          особенный вкус, но и придает ему свежесть и аппетитный аромат.
+        </p>
+        <p>
+          Блюдо подается с сочным овощным гарниром, состоящим из свежих овощей, обжаренных на оливковом масле и
+          посыпанных
+          разнообразными специями.
+        </p>
+        <p>
+          Оно идеально подходит для ужина или обеда в нашем ресторане. Насладитесь сочным и ароматным вкусом блюда,
+          приготовленного с любовью и тщательно подобранными ингредиентами.
+        </p>
+      </div>
+      <h2 class="mb-3 h3">Ингредиенты:</h2>
+
+      <div class="productIngredientList">
+
+        <div class="productIngredientItem gap-2">
+          <span>Соль</span>
+          <div class="productIngredientAction">
+            <input id="ingred_1" type="checkbox" hidden checked>
+            <label for="ingred_1">
+              <div class="rect"></div>
+            </label>
+          </div>
+        </div><!-- /productIngredientItem gap-2 -->
+
+        <div class="productIngredientItem gap-2">
+          <span>Лук</span>
+          <div class="productIngredientAction">
+            <input id="ingred_2" type="checkbox" hidden>
+            <label for="ingred_2">
+              <div class="rect"></div>
+            </label>
+          </div>
+        </div><!-- /productIngredientItem gap-2 -->
+        <div class="productIngredientItem gap-2">
+          <span>Чеснок</span>
+          <div class="productIngredientAction">
+            <input id="ingred_3" type="checkbox" hidden>
+            <label for="ingred_3">
+              <div class="rect"></div>
+            </label>
+          </div>
+        </div><!-- /productIngredientItem gap-2 -->
+        <div class="productIngredientItem gap-2">
+          <span>Черный перец</span>
+          <div class="productIngredientAction">
+            <input id="ingred_4" type="checkbox" hidden checked>
+            <label for="ingred_4">
+              <div class="rect"></div>
+            </label>
+          </div>
+        </div><!-- /productIngredientItem gap-2 -->
+        <div class="productIngredientItem gap-2">
+          <span>Красный перец</span>
+          <div class="productIngredientAction">
+            <input id="ingred_5" type="checkbox" hidden>
+            <label for="ingred_5">
+              <div class="rect"></div>
+            </label>
+          </div>
+        </div><!-- /productIngredientItem gap-2 -->
+
+      </div><!-- /productIngredientList -->
+
+      <div class="d-flex gap-2">
+
+        <button class="button productAddToCart button--lg button--blue gap-2 w-100">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#plus"></use>
+          </svg>
+          Добавить
+        </button>
+
+        <!-- product added statement -->
+        <!-- <button class="button productAddToCart button--lg button--green gap-2 w-100">
+          <img src="@img/icons/cart-white.svg" alt="icon">
+          В корзине
+        </button> -->
+
+        <!-- productCount -->
+        <!-- <div class="productCount d-flex productQuantity" data-title="Количество">
+          <button class="productQuantityMinus productQuantityBtn" type="button"
+            onclick="this.nextElementSibling.stepDown();">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#minus"></use>
+            </svg>
+          </button>
+          <input type="number" min="1" max="99" step="1" value="1" title="Кол-во" inputmode="numeric"
+            autocomplete="off">
+          <button class="productQuantityPlus productQuantityBtn" type="button"
+            onclick="this.previousElementSibling.stepUp();">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#plus"></use>
+            </svg>
+          </button>
+        </div> -->
+
+        <!-- add .active for change background productAddToWishlist -->
+        <a href="#" class="productAddToWishlist"></a>
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+</section>

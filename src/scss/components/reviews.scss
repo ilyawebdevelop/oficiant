@@ -1,0 +1,114 @@
+.reviews {
+  &Item {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    &Head {
+      column-gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    &Img {
+      width: 56px;
+      height: 56px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    &Name {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    &Date {
+      font-size: 12px;
+      line-height: 16px;
+      color: var(--gray);
+    }
+
+    &Descr {
+      line-height: 143%;
+    }
+  }
+  &Form {
+    margin-top: 40px;
+  }
+}
+.reviewsBtnW {
+  .button {
+    width: 50%;
+  }
+}
+
+.rating-area {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: auto;
+  justify-content: flex-end;
+  column-gap: 3px;
+}
+
+.rating-area:not(:checked)>input {
+  display: none;
+}
+
+.rating-area:not(:checked)>label {
+  float: right;
+  padding: 0;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 10px;
+  color: var(--disabled);
+  margin-left: 1px;
+}
+
+.rating-area:not(:checked)>label:before {
+  content: '★';
+}
+
+.rating-area>input:checked~label {
+  color: var(--yellow);
+}
+
+.rating-area:not(:checked)>label:hover,
+.rating-area:not(:checked)>label:hover~label {
+  color:  var(--yellow);
+}
+
+.rating-area>input:checked+label:hover,
+.rating-area>input:checked+label:hover~label,
+.rating-area>input:checked~label:hover,
+.rating-area>input:checked~label:hover~label,
+.rating-area>label:hover~input:checked~label {
+  color:  var(--yellow);
+}
+
+.rate-area>label:active {
+  position: relative;
+}
+.reviewsForm{
+  .rating-area {
+    column-gap: 8px;
+    justify-content: center;
+  }
+  .rating-area:not(:checked)>label {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+.ckeckForm {
+  .rating-area {
+    column-gap: 8px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .rating-area:not(:checked)>label {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+

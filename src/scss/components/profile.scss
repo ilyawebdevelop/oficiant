@@ -1,0 +1,25 @@
+.profile {
+  &Image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.historyProductListW {
+  overflow-x: scroll;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.historyItem {
+  border-bottom: 1px solid var(--outline);
+}
+.historyMore {
+  overflow: hidden;
+}

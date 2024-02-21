@@ -1,0 +1,49 @@
+<!-- about -->
+<section class="order" id="order">
+
+  @@include('../about/head.html',{})
+
+  <div class="py-4">
+    <div class="container">
+
+      <h2 class="h3 mb-1">Написать директору</h2>
+      <p>
+        Отправьте ваше сообщение, жалобу или предложение, напрямую директору ресторана.
+      </p>
+      <form action="#" class="orderForm">
+        <div class="inputW">
+          <textarea name="dirFormTextarea" id="dirFormTextarea" cols="30" rows="10" class="dirFormTextarea formText"
+            placeholder="Оставьте ваше сообщение"></textarea>
+        </div>
+        <div class="agreement">
+          <input type="checkbox" id="dirCheckbox" hidden>
+          <label class="d-flex gap-2 dirCheckboxLabel" for="dirCheckbox">
+            <div class="rect"></div>
+            <span class="pt-1">
+              Хочу, чтобы со мной связались по телефону
+            </span>
+          </label>
+        </div>
+
+        <div class="inputW inputDirW">
+          <input type="tel" class="formInput" placeholder="+ 7 (___) ___ __ __">
+        </div>
+
+
+        <div class="d-flex gap-2 orderBtnW mt-4">
+          <button class="button button--transparent">
+            Отменить
+          </button>
+          <button class="button button--blue">
+            Отправить
+          </button>
+        </div>
+      </form>
+
+
+
+
+    </div>
+  </div>
+
+</section>
