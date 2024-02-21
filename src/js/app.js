@@ -150,6 +150,4 @@ dirCheckboxLabel?.addEventListener('click', () => {
   }
 });
 
-var elemModal = document.getElementById('modal-table');
-let modal = new bootstrap.Modal(elemModal)
-modal.show()
+
