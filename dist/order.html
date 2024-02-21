@@ -40,10 +40,15 @@
       </a>
     </div>
   </div>
+
+
+</header>
+
+<div class="headerSidebarWrap">
   <div class="headerSidebar">
 
     <div class="d-flex flex-column justify-content-between headerSidebarW">
-
+  
       <div class="d-block">
         <div class="headerSidebarTop headerSidebarFixed">
           <div class="container">
@@ -60,13 +65,13 @@
             </div>
           </div>
         </div><!-- /headerSidebarTop -->
-
+  
         <div class="headerSidebarProfile pt-3 pb-3">
-
+  
           <div class="container">
             <div class="fw-medium mb-2 fz-16">Профиль</div>
-          </div>          
-
+          </div>
+  
           <!-- Раскомментировать для вывода пунктов меню под заголовком ПРОФИЛЬ -->
           <nav class="headerMenuNav headerNav">
             <ul class="headerNavList">
@@ -76,21 +81,21 @@
             </ul>
           </nav>
           <!-- Раскомментировать код выше для вывода пунктов меню под заголовком ПРОФИЛЬ -->
-
+  
           <div class="container">
             <button class="headerAuthorizeBtn button button--blue mt-3 mb-3">
               Авторизация
             </button>
           </div>
-
+  
         </div><!-- /headerSidebarProfile -->
-
+  
         <div class="headerSidebarMenu headerMenu pt-3 pb-3">
-
+  
           <div class="container">
             <div class="fw-medium mb-2 fz-16">Ресторан</div>
           </div>
-
+  
           <nav class="headerMenuNav headerNav">
             <ul class="headerNavList">
               <li class="menu-restourant"><a href="#">О ресторане</a></li>
@@ -99,7 +104,7 @@
               <li class="menu-order"><a href="#">Обратная связь</a></li>
             </ul>
           </nav>
-
+  
         </div>
       </div>
       <div class="headerSidebarBottom pt-3">
@@ -107,7 +112,7 @@
           <div class="d-flex flex-column gap-2 mb-4 mt-4">
             <span class="headerSidebarNameProfile">Имя пользователя</span>
             <a class="headerSidebarLogout" href="#">Выйти</a>
-
+  
           </div>
           <div class="d-flex flex-column gap-2 fz-10">
             <a href="#">
@@ -118,13 +123,13 @@
           </div>
         </div>
       </div>
-
+  
     </div>
-
+  
   </div><!-- /headerSidebar -->
-
+  
   <div class="headerAuthorize">
-
+  
     <div class="headerSidebarTop headerSidebarFixed w-100">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
@@ -137,7 +142,7 @@
         </div>
       </div>
     </div><!-- /headerSidebarTop -->
-
+  
     <div class="authorizeFormW pt-4">
       <div class="container">
         <form class="headerAuthorizeForm authorizeForm" action="#">
@@ -145,13 +150,13 @@
             <div class="formInputName mb-2 text-uppercase fw-medium">
               Номер телефона
             </div>
-            <input type="tel" class="formInput" placeholder="+ 7 (___) ___ __ __">
+            <input type="tel" class="formInput error" placeholder="+ 7 (___) ___ __ __">
           </div>
           <div class="inputW mb-3">
             <div class="formInputName mb-2 text-uppercase fw-medium">
               Пароль
             </div>
-            <input type="password" class="formInput">
+            <input type="password" class="formInput" placeholder="**********">
           </div>
           <a href="#" class="authorizeForgotBtn mb-4 text-center">Забыли пароль?</a>
           <button class="authorizeBtn button button--lg button--blue w-100">Войти</button>
@@ -185,13 +190,13 @@
         </form>
       </div>
     </div>
-
-
-
+  
+  
+  
   </div><!-- /headerAuthorize -->
-
+  
   <div class="headerRegister">
-
+  
     <div class="headerSidebarTop headerSidebarFixed w-100">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
@@ -204,7 +209,7 @@
         </div>
       </div>
     </div><!-- /headerSidebarTop -->
-
+  
     <div class="authorizeFormW pt-4">
       <div class="container">
         <form class="headerAuthorizeForm authorizeForm" action="#">
@@ -263,11 +268,11 @@
         </form>
       </div>
     </div>
-
-
-
+  
+  
+  
   </div><!-- /headerRegister -->
-
+  
   <div class="headerForgotPassword">
     <div class="headerSidebarTop headerSidebarFixed w-100">
       <div class="container">
@@ -278,7 +283,7 @@
         </div>
       </div>
     </div><!-- /headerSidebarTop -->
-
+  
     <div class="authorizeFormW pt-4">
       <div class="container">
         <form class="headerAuthorizeForm authorizeForm" action="#">
@@ -297,13 +302,13 @@
             </label>
           </div>
           <button class="sendCodeBtn button button--lg button--blue w-100">Отправить код</button>
-
+  
         </form>
       </div>
     </div>
-
+  
   </div>
-
+  
   <div class="headerVerifyEmpty">
     <div class="headerSidebarTop headerSidebarFixed w-100">
       <div class="container">
@@ -314,7 +319,7 @@
         </div>
       </div>
     </div><!-- /headerSidebarTop -->
-
+  
     <div class="authorizeFormW pt-4">
       <div class="container">
         <p></p>
@@ -338,10 +343,10 @@
         </form>
       </div>
     </div>
-
+  
   </div>
+</div>
 
-</header>
 		<main class="main">
 			<section class="intro productIntro">
 
@@ -477,6 +482,8 @@
     </li>
   </ul>
 </nav>
+
+<div class="overlay"></div>
 
 <!-- categories and subcategories -->
 <div class="catFixed topRound">

@@ -37,17 +37,22 @@ let catalogActionFilterClose = document.querySelector('.catalogActionFilterClose
 let catFixed = document.querySelector('.catFixed');
 let catalogHeadFixed = document.querySelector('.catalogFixed');
 let bodyEl = document.querySelector('body');
+let overlay = document.querySelector('.overlay');
 catalogActionFilterBtn?.addEventListener('click', () => {
   catFixed.classList.add('active');
   bodyEl.classList.add('hidden');
   catalogHeadFixed.classList.add('hide');
+  toggleOverlay();
 });
 catalogActionFilterClose.addEventListener('click', () => {
   catFixed.classList.remove('active');
   bodyEl.classList.remove('hidden');
   catalogHeadFixed.classList.remove('hide');
+  toggleOverlay();
 });
-
+const toggleOverlay = function () {
+  overlay.classList.toggle('active');
+}
 let footerNavItemBtn = document.querySelector('.footerNavItemBtn');
 let callPerson = document.querySelector('.callPerson');
 footerNavItemBtn?.addEventListener('click', () => {
@@ -75,12 +80,14 @@ btnMenu?.addEventListener('click', function (e) {
   toggleMenu();
   toggleBurger();
   bodyOverflow();
+  toggleOverlay();
 });
 closeMenu?.addEventListener('click', function (e) {
   e.stopPropagation();
   toggleMenu();
   toggleBurger();
   bodyOverflow();
+  toggleOverlay();
 });
 
 let headerAuthorizeBtn = document.querySelector('.headerAuthorizeBtn');
@@ -151,3 +158,13 @@ dirCheckboxLabel?.addEventListener('click', () => {
 });
 
 
+overlay.addEventListener('click', (e) => {
+  e.stopPropagation();
+  overlay.classList.remove('active');
+  menu.classList.remove('active');
+  btnMenu.classList.remove('active');
+  bodyEl.classList.remove('hidden');
+  catFixed.classList.remove('active');
+  bodyEl.classList.remove('hidden');
+  catalogHeadFixed.classList.remove('hide');
+});

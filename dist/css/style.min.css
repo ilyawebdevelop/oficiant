@@ -13170,25 +13170,17 @@ h5 {
 @-webkit-keyframes shows {
   from {
     opacity: 0;
-    -webkit-transform: translateY(-120px);
-    transform: translateY(-120px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
   }
 }
 @keyframes shows {
   from {
     opacity: 0;
-    -webkit-transform: translateY(-120px);
-    transform: translateY(-120px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
   }
 }
 .topRound {
@@ -13235,9 +13227,21 @@ h5 {
   padding: 14px 16px;
   width: 100%;
   background: var(--background);
+  border: 1px solid var(--background);
+}
+.formText:focus {
+  background-color: transparent;
+  border: 1px solid var(--black);
 }
 .formText::placeholder {
   color: var(--gray);
+}
+.formText.error {
+  border-color: var(--error);
+  background: rgba(224, 40, 40, 0.1);
+}
+.formText.error::placeholder {
+  color: var(--error);
 }
 
 .agreement {
@@ -13271,6 +13275,7 @@ h5 {
   padding-right: 16px;
   width: 100%;
   border: 1px solid var(--background);
+  font-size: 16px;
 }
 .formInput--transparent {
   background-color: transparent;
@@ -13279,6 +13284,13 @@ h5 {
 .formInput:focus {
   background-color: transparent;
   border: 1px solid var(--black);
+}
+.formInput.error {
+  border-color: var(--error);
+  background: rgba(224, 40, 40, 0.1);
+}
+.formInput.error::placeholder {
+  color: var(--error);
 }
 .formInputName {
   font-size: 12px;
@@ -13332,6 +13344,29 @@ h5 {
 .checkNotPayed {
   font-size: 12px;
   color: var(--gray);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 37, 72, 0.4);
+  z-index: 4;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay.active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-animation: shows 0.3s;
+  animation: shows 0.3s;
+}
+
+.headerSidebarWrap {
+  position: relative;
+  z-index: 5;
 }
 
 .button {
@@ -13818,6 +13853,10 @@ h5 {
   color: #222;
   text-align: center;
 }
+.headerVerifyEmpty .numbers input:focus {
+  background-color: transparent;
+  border: 1px solid var(--black);
+}
 .headerForgotPassword {
   position: fixed;
   left: 0;
@@ -14074,6 +14113,19 @@ h5 {
   padding-left: 16px;
   padding-right: 16px;
   width: 100%;
+}
+.authorizeForm .formInput.error {
+  border-color: var(--error);
+  background: rgba(224, 40, 40, 0.1);
+}
+.authorizeForm .formInput.error::placeholder {
+  color: var(--error);
+}
+.authorizeForm .formInput.error:focus {
+  color: #222;
+}
+.authorizeForm .formInput.error:focus::placeholder {
+  color: #222;
 }
 .authorizeForm .formInput:focus {
   background-color: transparent;
@@ -15069,7 +15121,7 @@ h5 {
   left: 0;
   width: 100%;
   background-color: #fff;
-  z-index: 3;
+  z-index: 4;
   overflow-y: scroll;
   display: none;
 }

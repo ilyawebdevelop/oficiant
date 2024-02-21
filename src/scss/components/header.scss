@@ -126,6 +126,10 @@
         font-weight: 700;
         color: #222;
         text-align: center;
+        &:focus {
+          background-color: transparent;
+          border: 1px solid var(--black);
+        }
       }
     }
   }
@@ -444,10 +448,26 @@
     padding-left: 16px;
     padding-right: 16px;
     width: 100%;
+    &.error {
+      border-color: var(--error);
+      background: rgba($color: #E02828, $alpha: .1);
+      &::placeholder {
+        color: var(--error);
+      }
+      &:focus {
+        color: #222;
+        &::placeholder{
+          color: #222;
+        }
+      }
+    
+    }
     &:focus {
       background-color: transparent;
       border: 1px solid var(--black);
+
     }
+
 
     &Name {
       font-size: 12px;
