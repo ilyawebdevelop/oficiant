@@ -16,6 +16,10 @@
     &List {
       display: flex;
       justify-content: space-between;
+      @media(min-width: 576px){
+        justify-content: center;
+        column-gap: 35px;
+      }
     }
 
     &Item {

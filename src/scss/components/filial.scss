@@ -1,9 +1,18 @@
 .filial {
-
+  &List {
+    @media(min-width: 576px){
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 16px;
+    }
+  }
   &Item {
     background: var(--background);
     border-radius: 32px;
     padding: 24px;
+    @media(min-width: 576px){
+      grid-column: 6 span;
+    }
 
     &:not(:last-child) {
       margin-bottom: 16px;

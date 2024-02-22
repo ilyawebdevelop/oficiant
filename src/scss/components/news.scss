@@ -1,5 +1,16 @@
 .news {
+  &List {
+    @media(min-width: 576px){
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 16px;
+    }
+  }
   &Card {
+    @media(min-width: 576px){
+      grid-column: 6 span;
+    }
+   
     &:not(:last-child){
       margin-bottom: 24px;
     }
@@ -41,7 +52,12 @@
         object-fit: cover;
         border-radius: 8px;
         transition: opacity .2s linear;
-
+        @media(min-width: 992px){
+          height: 15vw;
+        }
+        @media(min-width: 1200px){
+          height: 200px;
+        }
         &:hover {
           opacity: .9;
         }

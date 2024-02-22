@@ -1401,7 +1401,7 @@ progress {
 }
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    max-width: 1320px;
+    max-width: 1160px;
   }
 }
 :root {
@@ -14154,12 +14154,17 @@ h5 {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (min-width: 768px) {
+  .introSlide {
+    padding-bottom: 200px;
+  }
+}
 .introSlide::after {
   content: "";
   background: linear-gradient(359deg, rgba(0, 0, 0, 0.88) 1.67%, rgba(15, 15, 15, 0) 100%);
   position: absolute;
   width: 100%;
-  height: 190px;
+  height: 100%;
   left: 0;
   bottom: 0;
 }
@@ -14249,6 +14254,16 @@ h5 {
   grid-column: 6 span;
   position: relative;
 }
+@media (min-width: 576px) {
+  .catalogCard {
+    grid-column: 4 span;
+  }
+}
+@media (min-width: 1200px) {
+  .catalogCard {
+    grid-column: 3 span;
+  }
+}
 .catalogCard::before {
   position: absolute;
   left: 0;
@@ -14276,6 +14291,16 @@ h5 {
   height: 134px;
   object-fit: cover;
   border-radius: 16px;
+}
+@media (min-width: 576px) {
+  .catalogCardImg img {
+    height: 20vw;
+  }
+}
+@media (min-width: 1200px) {
+  .catalogCardImg img {
+    height: 250px;
+  }
 }
 .catalogCardWishlist {
   position: absolute;
@@ -14432,7 +14457,12 @@ h5 {
   z-index: 2;
   position: absolute;
   top: 72px;
-  left: 20px;
+}
+.productCat.container {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 .productCatLink {
   background-color: #fff;
@@ -14459,6 +14489,16 @@ h5 {
 }
 .productIntro .introSlide {
   min-height: 360px;
+}
+@media (min-width: 576px) {
+  .productIntro .introSlide {
+    min-height: 55vw;
+  }
+}
+@media (min-width: 992px) {
+  .productIntro .introSlide {
+    min-height: 450px;
+  }
 }
 .productParamList {
   margin-bottom: 32px;
@@ -14640,10 +14680,22 @@ h5 {
   color: #fff;
 }
 
+@media (min-width: 576px) {
+  .filialList {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
+  }
+}
 .filialItem {
   background: var(--background);
   border-radius: 32px;
   padding: 24px;
+}
+@media (min-width: 576px) {
+  .filialItem {
+    grid-column: 6 span;
+  }
 }
 .filialItem:not(:last-child) {
   margin-bottom: 16px;
@@ -14675,6 +14727,18 @@ h5 {
   top: 3px;
 }
 
+@media (min-width: 576px) {
+  .newsList {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
+  }
+}
+@media (min-width: 576px) {
+  .newsCard {
+    grid-column: 6 span;
+  }
+}
 .newsCard:not(:last-child) {
   margin-bottom: 24px;
 }
@@ -14706,6 +14770,16 @@ h5 {
   object-fit: cover;
   border-radius: 8px;
   transition: opacity 0.2s linear;
+}
+@media (min-width: 992px) {
+  .newsCardImg img {
+    height: 15vw;
+  }
+}
+@media (min-width: 1200px) {
+  .newsCardImg img {
+    height: 200px;
+  }
 }
 .newsCardImg img:hover {
   opacity: 0.9;
@@ -15031,6 +15105,12 @@ h5 {
 .footerNavList {
   display: flex;
   justify-content: space-between;
+}
+@media (min-width: 576px) {
+  .footerNavList {
+    justify-content: center;
+    column-gap: 35px;
+  }
 }
 .footerNavItem.active .footerNavLink {
   color: var(--primary);
