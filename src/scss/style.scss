@@ -4,6 +4,9 @@
 // bootstrap v5.3.2
 @import "./bootstrap.min";
 
+// select2
+@import "./select2.min";
+
 // Базовые подключения
 @import 'vars';
 @import 'mixins';
@@ -29,6 +32,12 @@
 @import "./components/cart";
 @import "./components/profile";
 @import "./components/check";
+@import "./components/sidebar";
+@import "./components/activity";
+@import "./components/admin";
+
+// Admin
+@import "./components/authorize";
 
 @import "./components/footer";
 

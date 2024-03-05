@@ -24,7 +24,78 @@
     &:disabled {
       border-color: var(--disabled);
       color: var(--disabled);
+    }
 
+    &-blue {
+      color: var(--primary);
+      border: 1px solid var(--primary);
+      transition: border-color .2s linear, color .2s linear, background .2s linear;
+
+      &:hover {
+        color: var(--tetriary);
+        background: var(--background);
+        border-color: var(--background);
+
+        svg {
+          stroke: var(--tetriary);
+        }
+      }
+
+      &:disabled {
+        border-color: var(--disabled);
+        color: var(--disabled);
+
+        svg {
+          stroke: var(--disabled);
+        }
+      }
+
+
+      svg {
+        width: 16px;
+        height: 16px;
+        stroke: var(--primary);
+        transition: stroke .2s linear;
+      }
+    }
+
+    &-tetriary {
+      color: var(--tetriary);
+      border: 1px solid var(--tetriary);
+      transition: border-color .2s linear, color .2s linear, background .2s linear;
+      cursor: pointer;
+
+      &.border-width-2 {
+        border-width: 2px;
+      }
+
+      &:hover {
+
+
+        // border-color: var(--background);
+
+        svg {
+          stroke: var(--tetriary);
+        }
+      }
+
+      &:disabled {
+        border-color: var(--disabled);
+        color: var(--disabled);
+
+        svg {
+          stroke: var(--disabled);
+        }
+      }
+
+
+      svg {
+        width: 16px;
+        height: 16px;
+        stroke: var(--tetriary);
+        fill: transparent;
+        transition: stroke .2s linear;
+      }
     }
   }
 
@@ -40,6 +111,15 @@
 
     &:disabled {
       background-color: var(--disabled);
+    }
+
+    &.disabled {
+      background-color: var(--disabled);
+      pointer-events: none;
+
+      svg {
+        stroke: var(--disabled);
+      }
     }
   }
 
@@ -230,4 +310,84 @@
     fill: transparent;
     stroke: #333333;
   }
+}
+
+.buttonRound {
+  min-width: 32px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  border-radius: 50%;
+  transition: background-color .2s linear;
+
+  &:hover {
+    background-color: var(--primary);
+
+    svg {
+      stroke: #fff;
+      fill: transparent;
+    }
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: transparent;
+    stroke: var(--gray);
+    transition: stroke .2s linear;
+  }
+  &--red {
+    svg {
+      stroke: var(--error);
+    }
+  }
+}
+
+.searchInputBtn {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+
+.dropAndDrag {
+  img {
+    min-width: 24px;
+    width: 24px;
+  }
+}
+.stop-lg {
+  color: #222;
+  svg {
+    fill: transparent;
+    stroke: #333;
+    width: 24px;
+    height: 24px;
+  }
+  &:disabled {
+    color: var(--disabled);
+    svg {
+      stroke: var(--disabled);
+    }
+  }
+  &--active {
+    color: var(--error);
+    svg {
+      stroke: var(--error);
+    }
+  }
+ 
+}
+.textMore{
+  color: var(--primary);
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 16px;
 }

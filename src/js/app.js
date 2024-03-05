@@ -1,6 +1,7 @@
 import * as flsFunctions from "./modules/functions.js";
 import "./modules/jquery-3.7.1.min.js";
 import "./modules/fslightbox.js";
+import "./modules/select2.min.js";
 import "./modules/bootstrap.bundle.min.js";
 import './components.js';
 
@@ -44,7 +45,7 @@ catalogActionFilterBtn?.addEventListener('click', () => {
   catalogHeadFixed.classList.add('hide');
   toggleOverlay();
 });
-catalogActionFilterClose.addEventListener('click', () => {
+catalogActionFilterClose?.addEventListener('click', () => {
   catFixed.classList.remove('active');
   bodyEl.classList.remove('hidden');
   catalogHeadFixed.classList.remove('hide');
@@ -98,35 +99,35 @@ let authorizeForgotBtn = document.querySelector('.authorizeForgotBtn');
 let headerAuthorize = document.querySelector('.headerAuthorize');
 let headerForgotPassword = document.querySelector('.headerForgotPassword');
 let headerRegister = document.querySelector('.headerRegister');
-headerAuthorizeBtn.addEventListener('click', () => {
+headerAuthorizeBtn?.addEventListener('click', () => {
   headerAuthorize.classList.add('active');
 });
-headerSidebarAuthorizeBtn.addEventListener('click', () => {
+headerSidebarAuthorizeBtn?.addEventListener('click', () => {
   headerAuthorize.classList.add('active');
   headerRegister.classList.remove('active');
 });
-headerAuthorizeBack.addEventListener('click', () => {
+headerAuthorizeBack?.addEventListener('click', () => {
   headerAuthorize.classList.remove('active');
 });
 
 let headerSidebarRegisterBtn = document.querySelector('.headerSidebarRegisterBtn');
 let headerRegisterBack = document.querySelector('.headerRegisterBack');
 
-headerSidebarRegisterBtn.addEventListener('click', () => {
+headerSidebarRegisterBtn?.addEventListener('click', () => {
   headerAuthorize.classList.remove('active');
   headerRegister.classList.add('active');
 });
-headerRegisterBack.addEventListener('click', () => {
+headerRegisterBack?.addEventListener('click', () => {
   headerRegister.classList.remove('active');
   headerAuthorize.classList.add('active');
 });
-authorizeForgotBtn.addEventListener('click', () => {
+authorizeForgotBtn?.addEventListener('click', () => {
   headerAuthorize.classList.remove('active');
   headerForgotPassword.classList.add('active');
 });
 
 let headerForgotPasswordBack = document.querySelector('.headerForgotPasswordBack');
-headerForgotPasswordBack.addEventListener('click', () => {
+headerForgotPasswordBack?.addEventListener('click', () => {
   headerForgotPassword.classList.remove('active');
   headerAuthorize.classList.add('active');
 });
@@ -135,12 +136,12 @@ headerForgotPasswordBack.addEventListener('click', () => {
 let sendCodeBtn = document.querySelector('.sendCodeBtn');
 let headerVerifyEmpty = document.querySelector('.headerVerifyEmpty');
 let headerVerifyEmptyBack = document.querySelector('.headerVerifyEmptyBack');
-sendCodeBtn.addEventListener('click', () => {
+sendCodeBtn?.addEventListener('click', () => {
   headerForgotPassword.classList.remove('active');
   headerVerifyEmpty.classList.add('active');
 });
 
-headerVerifyEmptyBack.addEventListener('click', () => {
+headerVerifyEmptyBack?.addEventListener('click', () => {
   headerVerifyEmpty.classList.remove('active');
   headerForgotPassword.classList.add('active');
 });
@@ -158,7 +159,7 @@ dirCheckboxLabel?.addEventListener('click', () => {
 });
 
 
-overlay.addEventListener('click', (e) => {
+overlay?.addEventListener('click', (e) => {
   e.stopPropagation();
   overlay.classList.remove('active');
   menu.classList.remove('active');
@@ -168,3 +169,60 @@ overlay.addEventListener('click', (e) => {
   bodyEl.classList.remove('hidden');
   catalogHeadFixed.classList.remove('hide');
 });
+
+// select2
+var data = [{
+  id: 0,
+  text: '<button class="d-flex align-items-center gap-2"><img src="img/icons/edit-admin.svg"><span>Редактировать категории</span></button>',
+  title: 'enchancement'
+}];
+var data_2 = [{
+  id: 0,
+  text: '<button class="d-flex align-items-center gap-2"><img src="img/icons/edit-admin.svg"><span>Редактировать подкатегории</span></button>',
+  title: 'enchancement'
+}];
+
+$(document).ready(function () {
+  $('.select2html_1').select2(
+    {
+      data: data,
+      escapeMarkup: function (markup) {
+        return markup;
+      }
+    }
+  );
+  $('.select2html_2').select2(
+    {
+      data: data_2,
+      escapeMarkup: function (markup) {
+        return markup;
+      }
+    }
+  );
+  $('.select2html_1').on('select2:select', function (e) {
+    var data = e.params.data;
+    if (data.id == 0) {
+      var popupEditCat = document.getElementById('modal-edit-cat');
+      let modalEditCat = new bootstrap.Modal(popupEditCat)
+      modalEditCat.show();
+    }
+  });
+  $('.select2html_2').on('select2:select', function (e) {
+    var data = e.params.data;   
+    if (data.id == 0) {
+      var popupEditCat = document.getElementById('modal-edit-subcat');
+      let modalEditCat = new bootstrap.Modal(popupEditCat)
+      modalEditCat.show();
+    }
+  });
+});
+
+document.querySelectorAll('.textarea-noscroll').forEach(el => {
+  el.style.height = el.setAttribute('style', 'height: ' + el.scrollHeight + 'px');
+  el.classList.add('auto');
+  el.addEventListener('input', e => {
+    el.style.height = 'auto';
+    el.style.height = (el.scrollHeight) + 'px';
+  });
+});
+

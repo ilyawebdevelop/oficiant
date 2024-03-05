@@ -1,0 +1,352 @@
+<section class="activity">
+  <div class="container admin-container">
+    <div class="d-flex align-items-center justify-content-between adminHead">
+      <div class="h1">
+        Дашборд активности
+      </div>
+      <span class="h1 fw-bold">
+        22:21
+      </span>
+    </div>
+
+    <div class="row activityList">
+      <div class="col-md-6 col-lg-4">
+        <div class="activityCard">
+
+          <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+            <div class="activityCardCountW">
+              <span class="activityCardCount">
+                1
+              </span>
+            </div>
+            <span class="fw-medium">Забронирован</span>
+            <button><img src="@img/icons/activity-time.svg" alt="icon"></button>
+
+          </div>
+
+          <div class="activityTable">
+            <div class="d-flex justify-content-between">
+              <span class="fw-medium text--sm">3 гостей</span>
+              <span class="fw-medium text--sm">21:00</span>
+            </div>
+            <img src="@img/admin/activity/table.svg" alt="image" class="activityTableImg mx-auto mt-3 mb-3">
+            <div class="activityTableFooter d-flex justify-content-between align-items-center">
+              <span class="text--sm fw-medium">Венера Мартынова</span>
+              <button class="activityTableEdit" data-bs-toggle="modal" data-bs-target="#modal-reserve-edit">
+                <img src="@img/admin/activity/activity-table-edit.svg" alt="icon">
+              </button>
+            </div>
+          </div>
+
+        </div><!-- /activityCard -->
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="activityCard">
+
+          <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+            <div class="activityCardCountW">
+              <span class="activityCardCount">
+                2
+              </span>
+            </div>
+            <span class="fw-medium">Стол занят</span>
+            <button><img src="@img/icons/activity-remove.svg" alt="icon"></button>
+          </div>
+
+          <div class="activityRow mb-2">
+            <div class="d-flex justify-content-between align-items-center gap-2">
+
+              <div class="personListW" data-bs-toggle="modal" data-bs-target="#modal-guests">
+                <div class="personList">
+                  <a href="#" class="personItem">
+                    <img src="@img/admin/human/human.jpeg" alt="person">
+                  </a>
+                  <div class="personItem">
+                    <img src="@img/admin/human/human.jpeg" alt="person">
+                  </div>
+                  <a href="#" class="personItem">
+                    <span>Х</span>
+                  </a>
+                  <div class="personItem">
+                    <img src="@img/admin/human/human.jpeg" alt="person">
+                  </div>
+                  <div class="personItem">
+                    <img src="@img/admin/human/human.jpeg" alt="person">
+                  </div>
+                </div><!-- /personList -->
+                <span class="personListCount">+2</span>
+              </div>
+
+
+              <span class="fw-medium text--sm">20:48</span>
+
+            </div>
+          </div>
+
+          <div class="activityRow mb-2">
+            <div class="d-flex justify-content-between align-items-center gap-2 px-2">
+              <div class=" d-flex gap-2">
+                <img class="activityRowIcon" src="@img/icons/activity-person.svg" alt="icon">
+                <span class="fw-medium text--sm">Василий Литвинов</span>
+              </div>
+
+              <button class="activityReloadBtn" data-bs-toggle="modal" data-bs-target="#modal-oficiant">
+                <img src="@img/icons/activity-reload.svg" alt="icon">
+              </button>
+
+            </div>
+          </div>
+
+          <button class="button button--blue px-3 w-100" disabled>Посмотреть заказ</button>
+
+        </div><!-- /activityCard -->
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="activityCard">
+
+          <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+            <div class="activityCardCountW">
+              <span class="activityCardCount">
+                3
+              </span>
+            </div>
+            <span class="fw-medium">Заказ принят</span>
+            <button><img src="@img/icons/activity-clock.svg" alt="icon"></button>
+          </div>
+
+          <div class="activityRow mb-2">
+            <div class="d-flex justify-content-between align-items-center gap-2">
+
+              <div class="personListW" data-bs-toggle="modal" data-bs-target="#modal-guests">
+                <div class="personList">
+                  <a href="#" class="personItem"
+                    style="background-color: var(--disabled); background-image: url('@img/icons/person-black.svg');">
+                  </a>
+                </div><!-- /personList -->
+              </div>
+
+              <span class="fw-medium text--sm">20:32</span>
+
+            </div>
+          </div>
+
+          <div class="activityRow mb-2">
+            <div class="d-flex justify-content-between align-items-center gap-2 px-2">
+              <div class=" d-flex gap-2">
+                <img class="activityRowIcon" src="@img/icons/activity-person.svg" alt="icon">
+                <span class="fw-medium text--sm">Василий Литвинов</span>
+              </div>
+
+              <button class="activityReloadBtn" data-bs-toggle="modal" data-bs-target="#modal-oficiant">
+                <img src="@img/icons/activity-reload.svg" alt="icon">
+              </button>
+
+            </div>
+          </div>
+
+          <button class="button button--blue px-3 w-100" data-bs-toggle="modal"
+            data-bs-target="#modal-view-order">Посмотреть заказ</button>
+
+        </div><!-- /activityCard -->
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="activityCard">
+
+          <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+            <div class="activityCardCountW">
+              <span class="activityCardCount">
+                4
+              </span>
+            </div>
+            <span class="fw-medium">Заказ выполнен</span>
+            <button><img src="@img/icons/activity-finished.svg" alt="icon"></button>
+          </div>
+
+          <div class="activityRow mb-2">
+            <div class="d-flex justify-content-between align-items-center gap-2">
+
+              <div class="personListW" data-bs-toggle="modal" data-bs-target="#modal-guests">
+                <div class="personList">
+                  <a href="#" class="personItem">
+                    <img src="@img/admin/human/human.jpeg" alt="person">
+                  </a>
+                  <div class="personItem">
+                    <img src="@img/admin/human/human.jpeg" alt="person">
+                  </div>
+
+                </div><!-- /personList -->
+              </div>
+
+              <span class="fw-medium text--sm">20:48</span>
+
+            </div>
+          </div>
+
+          <div class="activityRow mb-2">
+            <div class="d-flex justify-content-between align-items-center gap-2 px-2">
+              <div class=" d-flex gap-2">
+                <img class="activityRowIcon" src="@img/icons/activity-person.svg" alt="icon">
+                <span class="fw-medium text--sm">Василий Литвинов</span>
+              </div>
+
+              <button class="activityReloadBtn" data-bs-toggle="modal" data-bs-target="#modal-oficiant">
+                <img src="@img/icons/activity-reload.svg" alt="icon">
+              </button>
+
+            </div>
+          </div>
+
+          <button class="button button--blue px-3 w-100" data-bs-toggle="modal"
+            data-bs-target="#modal-view-order">Посмотреть заказ</button>
+
+        </div><!-- /activityCard -->
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="activityCard">
+
+          <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+            <div class="activityCardCountW">
+              <span class="activityCardCount">
+                5
+              </span>
+            </div>
+            <span class="fw-medium">Официант!</span>
+            <button><img src="@img/icons/activity-call.svg" alt="icon"></button>
+          </div>
+
+          <div class="activityRow mb-2">
+            <div class="d-flex justify-content-between align-items-center gap-2">
+
+              <div class="personListW" data-bs-toggle="modal" data-bs-target="#modal-guests">
+                <div class="personList">
+                  <a href="#" class="personItem">
+                    <img src="@img/admin/human/human.jpeg" alt="person">
+                  </a>
+                  <div class="personItem">
+                    <img src="@img/admin/human/human.jpeg" alt="person">
+                  </div>
+                  <a href="#" class="personItem">
+                    <span>Х</span>
+                  </a>
+                  <div class="personItem">
+                    <img src="@img/admin/human/human.jpeg" alt="person">
+                  </div>
+                  <div class="personItem">
+                    <img src="@img/admin/human/human.jpeg" alt="person">
+                  </div>
+                </div><!-- /personList -->
+                <span class="personListCount">+2</span>
+              </div>
+
+              <span class="fw-medium text--sm">20:48</span>
+
+            </div>
+          </div>
+
+          <div class="activityRow mb-2">
+            <div class="d-flex justify-content-between align-items-center gap-2 px-2">
+              <div class=" d-flex gap-2">
+                <img class="activityRowIcon" src="@img/icons/activity-person.svg" alt="icon">
+                <span class="fw-medium text--sm">Василий Литвинов</span>
+              </div>
+
+              <button class="activityReloadBtn" data-bs-toggle="modal" data-bs-target="#modal-oficiant">
+                <img src="@img/icons/activity-reload.svg" alt="icon">
+              </button>
+
+            </div>
+          </div>
+
+          <button class="button button--blue px-3 w-100" data-bs-toggle="modal"
+            data-bs-target="#modal-view-order">Посмотреть заказ</button>
+
+        </div><!-- /activityCard -->
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="activityCard">
+
+          <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+            <div class="activityCardCountW">
+              <span class="activityCardCount">
+                6
+              </span>
+            </div>
+            <span class="fw-medium">Счёт!</span>
+            <button><img src="@img/icons/activity-check.svg" alt="icon"></button>
+          </div>
+
+          <div class="activityRow mb-2">
+            <div class="d-flex justify-content-between align-items-center gap-2">
+
+              <div class="personListW" data-bs-toggle="modal" data-bs-target="#modal-guests">
+                <div class="personList">
+                  <a href="#" class="personItem">
+                    <img src="@img/admin/human/human.jpeg" alt="person">
+                  </a>
+                </div><!-- /personList -->
+              </div>
+
+              <span class="fw-medium text--sm">21:00</span>
+
+            </div>
+          </div>
+
+          <div class="activityRow mb-2">
+            <div class="d-flex justify-content-between align-items-center gap-2 px-2">
+              <div class=" d-flex gap-2">
+                <img class="activityRowIcon" src="@img/icons/activity-person.svg" alt="icon">
+                <span class="fw-medium text--sm">Василий Литвинов</span>
+              </div>
+
+              <button class="activityReloadBtn" data-bs-toggle="modal" data-bs-target="#modal-oficiant">
+                <img src="@img/icons/activity-reload.svg" alt="icon">
+              </button>
+
+            </div>
+          </div>
+
+          <button class="button button--blue px-3 w-100" data-bs-toggle="modal"
+            data-bs-target="#modal-view-order">Посмотреть заказ</button>
+
+        </div><!-- /activityCard -->
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="activityCard">
+
+          <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+            <div class="activityCardCountW">
+              <span class="activityCardCount">
+                7
+              </span>
+            </div>
+            <span class="fw-medium">Гости уходят</span>
+            <button><img src="@img/icons/activity-call.svg" alt="icon"></button>
+          </div>
+
+          <img class="mx-auto mt-5 mb-5" src="@img/admin/activity/table-guest.svg" alt="table">
+
+        </div><!-- /activityCard -->
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="activityCard">
+
+          <div class="d-flex align-items-center justify-content-between gap-2 mb-2">
+            <div class="activityCardCountW">
+              <span class="activityCardCount">
+                8
+              </span>
+            </div>
+            <span class="fw-medium">Свободен</span>
+            <button><img src="@img/icons/activity-time-gray.svg" alt="icon"></button>
+          </div>
+
+          <img class="mx-auto mt-5 mb-5" src="@img/admin/activity/table-empty.svg" alt="table">
+
+        </div><!-- /activityCard -->
+      </div>
+
+    </div>
+
+  </div>
+</section>

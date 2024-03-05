@@ -263,3 +263,14 @@
     }
   }
 }
+.footerAction {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding-left: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 1;
+  background-color: #fff;
+}

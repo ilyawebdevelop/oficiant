@@ -1,0 +1,49 @@
+.authorize {
+  &Grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  &Img {
+    img {
+      max-height: 100vh;
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  &Content {
+    padding-bottom: 80px;
+    max-height: 100vh;
+    overflow-y: scroll;
+    @media(max-width: 1500px){
+      padding-bottom: 40px;
+    }
+    .headerLang {
+      width: fit-content;
+      margin-left: auto;
+    }
+  }
+
+  &Top {
+    padding-right: 23px;
+    padding-top: 16px;
+    margin-bottom: 7vh;
+    @media(max-width: 1500px){
+     
+    }
+  }
+  &Form {
+    width: 485px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.authorizeFormLogo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}

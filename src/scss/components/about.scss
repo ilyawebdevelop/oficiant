@@ -62,3 +62,10 @@
     }
   }
 }
+.filItem {
+  border: 1px solid var(--outline);
+  border-radius: 15px;
+  &:not(:last-child){
+    margin-bottom: 8px;
+  }
+}

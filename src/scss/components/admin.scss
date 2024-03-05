@@ -1,0 +1,263 @@
+.qrImage {
+  width: 200px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.historySelect {
+  width: fit-content;
+  padding-right: 70px;
+}
+
+.historyCheck {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.personalSelect {
+  padding-right: 60px;
+}
+
+.personalImg {
+  &.active {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 13px;
+      height: 13px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      background-color: var(--success);
+    }
+  }
+
+  img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+.personalItem {
+  position: relative;
+  transition: background-color .2s linear;
+
+  &:hover {
+    background-color: var(--background);
+  }
+}
+
+.personalItemName {
+  max-width: 200px;
+  transition: color .2s linear;
+
+  &:hover {
+    color: var(--primary);
+  }
+}
+
+.personalItemLink {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+}
+
+.addAdminPhotoW {
+  width: 100%;
+  height: calc(100% - 12px);
+  background-color: var(--background);
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: 128px;
+  background-position: top 28px center;
+  position: relative;
+}
+
+.addAdminPhoto {
+  width: 100%;
+  height: 100%;
+}
+
+#addAdminPhotoInput {
+  display: none;
+}
+
+.addAdminPhotoLabel {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+.addAdminPhotoImgW {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  max-height: 245px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 88px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(360deg, #222 0%, transparent 100%);
+    border-radius: 8px;
+  }
+}
+
+.addAdminPhotoImg {
+  width: 100%;
+  height: 100%;
+  min-height: 225px;
+  max-height: 245px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.personalStatImg {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.statItem {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+  background: #fff;
+  border-radius: 16px;
+  height: 100%;
+
+  &Head {
+    background-color: var(--background);
+    border-bottom: 1px solid var(--outline);
+  }
+
+  &Content {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  &Num {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+  }
+}
+
+.statList {
+  margin-top: 28px;
+  row-gap: 16px;
+}
+
+.blockBtn {
+  svg {
+    fill: transparent;
+    stroke: #333;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.removeAdminPhoto {
+  bottom: 12px;
+}
+
+.catActionItem {
+  column-gap: 10px;
+  padding-left: 16px;
+  padding-right: 4px;
+  width: fit-content;
+  border-radius: 14px;
+  height: 40px;
+}
+
+.foodPhoto {
+  height: auto;
+  min-height: 236px;
+
+  .addAdminPhotoImg {
+    min-height: 236px;
+  }
+
+  &Gal {
+    margin-top: 17px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
+
+    &Img {
+      grid-column: 4 span;
+      border-radius: 8px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      position: relative;
+
+      &--gradient {
+        &::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 50%;
+          bottom: 0;
+          left: 0;
+          background: linear-gradient(360deg, #222 0%, transparent 100%);
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
+        }
+      }
+
+      img {
+        border-radius: 8px;
+        width: 100%;
+        height: 64px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.foodPhotoGalUpload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  left: 0;
+  right: 0;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.foodPhotoRemove {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  z-index: 1;
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}

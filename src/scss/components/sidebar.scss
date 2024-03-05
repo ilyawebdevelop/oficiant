@@ -1,0 +1,128 @@
+.sidebarAdmin {
+  background-color: var(--primary);
+  position: fixed;
+  left: 0;
+  top: 0;
+  max-width: 200px;
+  width: 100%;
+  border-radius: 0 20px 20px 0;
+  height: 100vh;
+  // overflow-y: scroll;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  z-index: 2;
+
+ 
+
+  &Logo {
+    margin-bottom: 24px;
+  }
+  &T {
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+  
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+  }
+  &Item {
+    &.active {
+      .sidebarAdminLink {
+        background: var(--secondary);
+      }
+    }
+  }
+
+  &Link {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 16px;
+    padding: 4px 28px 4px 8px;
+    position: relative;
+    transition: background .2s linear;
+
+    &:hover {
+      background: var(--secondary);
+    }
+
+    &.data-count {
+      &::after {
+        content: attr(data-count);
+        width: 20px;
+        min-width: 20px;
+        height: 20px;
+        background-color: var(--success);
+        border-radius: 50%;
+        font-size: 10px;
+        line-height: 120%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &Btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    border-radius: 50%;
+    position: absolute;
+    right: -20px;
+    top: 55px;
+  }
+}
+
+.sidebarProfile {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  padding-left: 8px;
+
+  &Img {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &Content {
+    color: #fff;
+  }
+
+  &Name {
+    font-weight: 500;
+  }
+
+  &Work {
+    font-size: 12px;
+    line-height: 133%;
+  }
+}
