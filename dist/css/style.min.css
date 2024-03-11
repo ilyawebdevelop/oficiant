@@ -16965,7 +16965,8 @@ h5 {
   left: 0;
   right: 0;
   margin: auto;
-  z-index: 1;
+  z-index: 3;
+  cursor: pointer;
 }
 
 .addAdminPhotoImgW {
@@ -16988,6 +16989,7 @@ h5 {
   bottom: 0;
   background: linear-gradient(360deg, #222 0%, transparent 100%);
   border-radius: 8px;
+  z-index: 2;
 }
 
 .addAdminPhotoImg {
@@ -17094,6 +17096,12 @@ h5 {
   width: 100%;
   height: 64px;
   object-fit: cover;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .foodPhotoGalImg > img {
+    height: 20vw;
+  }
 }
 .foodPhoto--sm {
   min-height: 180px;
@@ -17103,12 +17111,15 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  height: 64px;
   margin: auto;
   left: 0;
   right: 0;
+}
+@media (max-width: 767px) {
+  .foodPhotoGalUpload {
+    height: 20vw;
+  }
 }
 .foodPhotoGalUpload img {
   width: 40px;
@@ -17124,6 +17135,10 @@ h5 {
 .foodPhotoRemove img {
   width: 16px;
   height: 16px;
+}
+
+.foodGalSlider {
+  margin-top: 17px;
 }
 
 .authorizeGrid {

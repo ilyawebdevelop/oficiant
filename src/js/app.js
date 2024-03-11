@@ -1,5 +1,6 @@
 import * as flsFunctions from "./modules/functions.js";
 import "./modules/jquery-3.7.1.min.js";
+import "./modules/inputmask.min.js";
 import "./modules/fslightbox.js";
 import "./modules/select2.min.js";
 import "./modules/bootstrap.bundle.min.js";
@@ -11,7 +12,11 @@ flsFunctions.isWebp();
 import Swiper, { Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar } from 'swiper';
 Swiper.use([Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar]);
 
-// Инициализация слайдера foodSlider
+let inputs = document.querySelectorAll('input[type="tel"]');
+let im = new Inputmask('+7 (999) 999-99-99');
+im.mask(inputs);
+
+// Инициализация слайдера introSlider
 document.querySelectorAll('.introSlider').forEach(n => {
   const mySwiperDepartment = new Swiper(n, {
     slidesPerView: 1,
@@ -30,6 +35,28 @@ document.querySelectorAll('.introSlider').forEach(n => {
       type: 'bullets',
     },
   });
+});
+
+// Инициализация слайдера foodGalSlider
+const foodGalSlider = document.querySelector('.foodGalSlider');
+var mySwiperFoodSlider = new Swiper(foodGalSlider, {
+  slidesPerView: 3,
+  speed: 800,
+  spaceBetween: 16,
+});
+
+// Инициализация слайдера foodGalMain
+const foodGalMain = document.querySelector('.foodGalMain');
+var mySwiperFoodSliderMain = new Swiper(foodGalMain, {
+  slidesPerView: 1,
+  speed: 600,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  thumbs: {
+    swiper: mySwiperFoodSlider,
+  },
 });
 
 

@@ -18,7 +18,7 @@
           <div class="row">
             <div class="col-md-4">
               <div class="addAdminPhoto h-auto">
-                <input id="addAdminPhotoInput" type="file">
+                <!-- <input id="addAdminPhotoInput" type="file"> -->
                 <div class="addAdminPhotoW foodPhoto" style="background-image: url('@img/icons/camera.svg');">
 
                   <!-- Загрузить фото -->
@@ -42,32 +42,64 @@
 
                   <!-- Картинка подгруженная -->
                   <div class="addAdminPhotoImgW">
-                    <img class="addAdminPhotoImg" src="@img/admin/human/human.jpeg" alt="human">
+
+                    <div class="swiper foodGalMain">
+                      <div class="swiper-wrapper">
+
+                        <div class="swiper-slide foodGalMainSlide">
+                          <img class="addAdminPhotoImg" src="@img/admin/human/human.jpeg" alt="human">
+                        </div>
+                        <div class="swiper-slide foodGalMainSlide">
+                          <img class="addAdminPhotoImg" src="@img/admin/intro/image-2.png" alt="human">
+                        </div>
+
+                      </div>
+                    </div>
+
                   </div>
 
                 </div>
               </div><!-- /addAdminPhoto -->
 
-              <div class="foodPhotoGal">
+              <div class="swiper foodGalSlider">
+                <div class="swiper-wrapper">
 
-                <div class="foodPhotoGalImg foodPhotoGalImg--gradient" style="background-color: var(--background);">
-                  <img src="@img/admin/intro/image-1.png" alt="image">
-                  <button class="foodPhotoRemove">
-                    <img src="@img/icons/remove.svg" alt="upload-photo">
-                  </button>
-                </div>
+                  <div class="swiper-slide foodGalSlide">
+                    <div class="foodPhotoGalImg foodPhotoGalImg--gradient" style="background-color: var(--background);">
+                      <img src="@img/admin/intro/image-1.png" alt="image">
+                      <button class="foodPhotoRemove">
+                        <img src="@img/icons/remove.svg" alt="upload-photo">
+                      </button>
+                    </div>
+                  </div><!-- /foodGalSlide -->
 
-                <div class="foodPhotoGalImg foodPhotoGalImg--gradient" style="background-color: var(--background);">
-                  <img src="@img/admin/intro/image-2.png" alt="image">
-                  <button class="foodPhotoRemove">
-                    <img src="@img/icons/remove.svg" alt="upload-photo">
-                  </button>
-                </div>
+                  <div class="swiper-slide foodGalSlide">
+                    <div class="foodPhotoGalImg foodPhotoGalImg--gradient" style="background-color: var(--background);">
+                      <img src="@img/admin/intro/image-2.png" alt="image">
+                      <button class="foodPhotoRemove">
+                        <img src="@img/icons/remove.svg" alt="upload-photo">
+                      </button>
+                    </div>
+                  </div><!-- /foodGalSlide -->
 
-                <div class="foodPhotoGalImg" style="background-color: var(--background);">
-                  <button class="foodPhotoGalUpload">
-                    <img src="@img/icons/upload-photo.svg" alt="upload-photo">
-                  </button>
+                  <div class="swiper-slide foodGalSlide">
+                    <div class="foodPhotoGalImg" style="background-color: var(--background);">
+                      <input id="addAdminPhotoInput" type="file">
+                      <label
+                        class="addAdminPhotoLabel button position-unset bottom-0 h-100 d-flex border-width-2 px-3 gap-2 align-items-center justify-content-center"
+                        for="addAdminPhotoInput">
+                        <!-- <svg>
+                          <use xlink:href="img/icons/icons.svg#upload"></use>
+                        </svg>
+                        Загрузить фото -->
+                      </label>
+
+                      <button class="foodPhotoGalUpload">
+                        <img src="@img/icons/upload-photo.svg" alt="upload-photo">
+                      </button>
+                    </div>
+                  </div><!-- /foodGalSlide -->
+
                 </div>
               </div>
             </div>
