@@ -43,6 +43,9 @@
       line-height: 133%;
       color: var(--gray);
     }
+    &Content {
+      width: 100%;
+    }
 
     &Img {
 
@@ -60,6 +63,13 @@
         }
         &:hover {
           opacity: .9;
+        }
+      }
+      &--admin {
+        img {
+          height: 115px;
+          width: 115px;
+          min-width: 115px;
         }
       }
     }

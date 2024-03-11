@@ -208,7 +208,7 @@ $(document).ready(function () {
     }
   });
   $('.select2html_2').on('select2:select', function (e) {
-    var data = e.params.data;   
+    var data = e.params.data;
     if (data.id == 0) {
       var popupEditCat = document.getElementById('modal-edit-subcat');
       let modalEditCat = new bootstrap.Modal(popupEditCat)
@@ -226,3 +226,37 @@ document.querySelectorAll('.textarea-noscroll').forEach(el => {
   });
 });
 
+let textMoreEach = document.querySelectorAll('.textMore');
+textMoreEach.forEach(el => {
+  let textHidden = el.closest('.text-hidden-w').querySelector('.text-hidden');
+  let textLess = el.closest('.text-hidden-w').querySelector('.textLess');
+  el.addEventListener('click', () => {
+    textHidden.classList.toggle('active');
+    el.classList.toggle('active');
+    textLess.classList.toggle('active');
+  });
+});
+
+let textLessEach = document.querySelectorAll('.textLess');
+textLessEach.forEach(el => {
+  let textHidden = el.closest('.text-hidden-w').querySelector('.text-hidden');
+  let textMore = el.closest('.text-hidden-w').querySelector('.textMore');
+  el.addEventListener('click', () => {
+    textHidden.classList.toggle('active');
+    el.classList.toggle('active');
+    textMore.classList.toggle('active');
+  });
+});
+
+let sidebarAdminBtn = document.querySelector('.sidebarAdminBtn');
+let sidebarAdminItemNameEach = document.querySelectorAll('.sidebarAdminItemName');
+let sidebarAdmin = document.querySelector('.sidebarAdmin');
+
+sidebarAdminBtn?.addEventListener('click', () => {
+  sidebarAdminItemNameEach.forEach(el => {
+    let elLink = el.closest('.sidebarAdminLink');
+    elLink.classList.toggle('hide');
+    el.classList.toggle('hide');
+  });
+  sidebarAdmin.classList.toggle('hide');
+});

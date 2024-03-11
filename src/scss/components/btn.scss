@@ -337,11 +337,26 @@
     height: 16px;
     fill: transparent;
     stroke: var(--gray);
-    transition: stroke .2s linear;
+    transition: stroke .2s linear, fill .2s linear;
   }
+
   &--red {
     svg {
       stroke: var(--error);
+    }
+  }
+
+  &--star {
+    svg {
+      stroke: var(--yellow);
+      fill: var(--yellow);
+    }
+
+    &:hover {
+      svg {
+        // stroke: var(--yellow);
+        // fill: transparent;
+      }
     }
   }
 }
@@ -363,31 +378,99 @@
     width: 24px;
   }
 }
+
 .stop-lg {
   color: #222;
+
   svg {
     fill: transparent;
     stroke: #333;
     width: 24px;
     height: 24px;
   }
+
   &:disabled {
     color: var(--disabled);
+
     svg {
       stroke: var(--disabled);
     }
   }
+
   &--active {
     color: var(--error);
+
     svg {
       stroke: var(--error);
     }
   }
- 
+
 }
-.textMore{
+
+.textMore {
   color: var(--primary);
   margin-top: 4px;
   font-size: 12px;
   line-height: 16px;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.textLess {
+  display: none;
+  color: var(--primary);
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.radioW {
+  background-color: var(--background);
+  padding: 4px;
+  border-radius: 15px;
+  width: fit-content;
+}
+
+.radioBtn {
+  border-radius: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.radioItem {
+  input {
+    &:checked {
+      &+label {
+        background-color: var(--primary);
+        color: #fff;
+      }
+    }
+  }
+}
+.notificationsBtn{
+  position: relative;
+  bottom: 18px;
+  svg {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    fill: transparent;
+    stroke: #333;
+  }
 }

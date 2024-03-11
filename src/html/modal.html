@@ -204,8 +204,9 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content p-0 pb-4">
 
-      <div class="d-flex align-items-center modalGrid-33 px-3 modal-head-sticky border-b-gray">
-        <div class="d-flex gap-2 modalCol33">
+      <div
+        class="d-flex align-items-start align-items-sm-center modalGrid-33 px-3 modal-head-sticky border-b-gray flex-column-reverse flex-sm-row">
+        <div class="d-flex justify-content-center justify-content-sm-start gap-2 modalCol33">
           <span>25.01.2024</span>
           <span>21:13</span>
         </div>
@@ -229,10 +230,10 @@
 
       <div class="d-block px-3">
 
-        <div class="d-flex align-items-center modalGrid-33 px-3 border-b-outline">
-          <span class="modalCol33">#162432</span>
+        <div class="d-flex align-items-center modalGrid-33 px-3 flex-column flex-sm-row border-b-outline">
+          <span class="modalCol33 text-center text-sm-start">#162432</span>
           <span class="modalCol33 text-center">Ожидание заказа</span>
-          <div class="personListW modalCol33 justify-content-end">
+          <div class="personListW modalCol33 justify-content-center justify-content-sm-end">
             <div class="personList">
               <a href="#" class="personItem">
                 <img src="@img/admin/human/human.jpeg" alt="person">
@@ -557,7 +558,7 @@
         </button>
       </div>
 
-      <div class="pt-3 px-3">
+      <form class="pt-3 px-3" action="#">
         <span class="text-uppercase text--sm fw-medium mb-2 d-block">Официант</span>
         <div class="selectW">
           <select name="selectOficiant" id="selectOficiant" class="formSelect form-select">
@@ -573,8 +574,7 @@
             Сохранить
           </a>
         </div>
-      </div>
-
+      </form>
 
     </div>
   </div>
@@ -606,12 +606,12 @@
     <div class="modal-content p-0 pb-4">
 
       <div class="d-flex align-items-center modalGrid-33 px-3 modal-head-sticky border-b-gray">
-        <div class="d-flex gap-2 modalCol33">
+        <div class="d-flex gap-1 gap-sm-2 modalCol25 flex-wrap">
           <span>25.01.2024</span>
           <span>21:13</span>
         </div>
-        <span class="fw-bold h2 modalCol33 mx-auto mb-0 text-center">Столик №1 </span>
-        <button type="button" class="btn-close modalCol33 static-btn-close opacity-75" data-bs-dismiss="modal"
+        <span class="fw-bold h2 modalCol55 mx-auto mb-0 text-center">Название филиала </span>
+        <button type="button" class="btn-close modalCol20 static-btn-close opacity-75" data-bs-dismiss="modal"
           aria-label="Close" data-bs-target="#modal-check-history">
           <img src="@img/icons/close-black.svg" alt="icon">
         </button>
@@ -876,7 +876,7 @@
 <div class="modal fade" id="modal-reserve-edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content p-0">
-      <div class="d-flex align-items-center modalGrid-33 px-3 py-2 border-b-gray">
+      <div class="d-flex align-items-center modalGrid-33 px-3 py-2 border-b-gray flex-column-reverse flex-sm-row">
         <button class="button button--blue modalCol33 px-2" data-bs-toggle="modal"
           data-bs-target="#modal-reserve-cancel">Отменить бронь</button>
         <span class="fw-bold h2 modalCol33 mx-auto mb-0 text-center">Столик №2</span>
@@ -887,7 +887,7 @@
       </div>
       <form class="modalForm px-3 py-3" action="#">
         <div class="row pb-3">
-          <div class="col-lg-4">
+          <div class="col-sm-4 mb-3 mb-sm-0">
             <div class="inputW">
               <div class="inputName text-uppercase fw-medium text--sm mb-2">
                 Время
@@ -895,7 +895,7 @@
               <input class="form-time formInput filled" type="time" value="16:44">
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-sm-4 mb-3 mb-sm-0">
             <div class="inputW">
               <div class="inputName text-uppercase fw-medium text--sm mb-2 ">
                 Дата
@@ -903,7 +903,7 @@
               <input class="form-date formInput filled" type="date" value="06.03.24">
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-sm-4">
             <div class="inputW">
               <div class="inputName text-uppercase fw-medium text--sm mb-2">
                 кол-во гостей
@@ -917,7 +917,7 @@
           </div>
         </div>
         <div class="row py-3">
-          <div class="col-lg-6">
+          <div class="col-sm-6 mb-3 mb-sm-0">
             <div class="inputW">
               <div class="inputName text-uppercase fw-medium text--sm mb-2">
                 Клиент
@@ -925,7 +925,7 @@
               <input class="formInput filled" type="text" placeholder="Имя Фамилия" value="Вера мартынова">
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-sm-6">
             <div class="inputW">
               <div class="inputName text-uppercase fw-medium text--sm mb-2">
                 номер телефона
@@ -936,8 +936,8 @@
         </div>
 
         <div class="d-flex gap-2 orderBtnW mt-4">
-          <button class="button button--lg button--transparent px-2" data-bs-dismiss="modal" aria-label="Close"
-            data-bs-target="#modal-reserve-edit">
+          <button type="button" class="button button--lg button--transparent px-2" data-bs-dismiss="modal"
+            aria-label="Close" data-bs-target="#modal-reserve-edit">
             Отменить
           </button>
           <button class="button button--lg button--blue px-2">
@@ -954,15 +954,15 @@
 <!-- modal-reserve-cancel -->
 <div class="modal fade" id="modal-reserve-cancel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content px-3 pb-3 pt-0">
+    <form class="modal-content px-3 pb-3 pt-0" action="#">
       <div class="fw-bold h2 mx-auto mb-3 text-center px-3 border-b-gray py-3 w-100">Столик №2</div>
       <div class="fw-bold h2 text-center mt-4">Уверены, что хотите отменить бронь?</div>
-      <div class="d-flex gap-2 orderBtnW mt-4">
-        <button class="button button--lg button--transparent px-2 border-width-2" data-bs-dismiss="modal"
-          aria-label="Close" data-bs-target="#modal-reserve-cancel">
+      <div class="d-flex gap-2 orderBtnW mt-4 flex-column flex-md-row">
+        <button class="button button--lg button--transparent px-2 border-width-2 w-100 w-md-auto"
+          data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-reserve-cancel">
           Нет, не отменять
         </button>
-        <button class="button button--lg button--blue px-2">
+        <button class="button button--lg button--blue px-2 w-100 w-md-auto">
           Да, отменить бронь
         </button>
       </div>
@@ -970,7 +970,7 @@
         data-bs-target="#modal-reserve-cancel">
         <img src="@img/icons/close-black.svg" alt="icon">
       </button>
-    </div>
+    </form>
   </div>
 </div>
 
@@ -980,8 +980,8 @@
     <div class="modal-content p-0 pb-4">
       <div class="fw-bold h2 mx-auto mb-0 text-center py-3 border-b-outline w-100">Добавить сотрудника</div>
 
-      <div class="row mt-4 px-4">
-        <div class="col-lg-6">
+      <form class="row mt-4 px-4" action="#">
+        <div class="col-sm-6">
           <div class="addAdminPhoto">
             <input id="addAdminPhotoInput" type="file">
             <div class="addAdminPhotoW" style="background-image: url('@img/icons/person-lg.svg');">
@@ -1006,14 +1006,14 @@
               </button>
 
               <!-- Картинка подгруженная -->
-              <div class="addAdminPhotoImgW">
+              <div class="addAdminPhotoImgW mb-3 mb-sm-0">
                 <img class="addAdminPhotoImg" src="@img/admin/human/human.jpeg" alt="human">
               </div>
 
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-sm-6">
           <div class="inputW mb-3">
             <div class="inputName text-uppercase fw-medium text--sm mb-2">
               Фамилия
@@ -1033,7 +1033,7 @@
             <input class="formInput" type="text" placeholder="Отчество">
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-sm-6">
           <div class="inputW mb-3">
             <div class="inputName text-uppercase fw-medium text--sm mb-2">
               номер телефона
@@ -1041,7 +1041,7 @@
             <input class="formInput" type="tel" placeholder="+ 7 (_ _ _) _ _ _  _ _  _ _">
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-sm-6">
           <div class="inputW mb-3">
             <div class="inputName text-uppercase fw-medium text--sm mb-2">
               Должность
@@ -1052,7 +1052,7 @@
             </select>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-sm-6">
           <div class="inputW mb-3">
             <div class="inputName text-uppercase fw-medium text--sm mb-2">
               EMAIL
@@ -1060,7 +1060,7 @@
             <input class="formInput" type="email" placeholder="user@address.com">
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-sm-6">
           <div class="inputW mb-3">
             <div class="inputName text-uppercase fw-medium text--sm mb-2">
               Пароль
@@ -1068,7 +1068,7 @@
             <input class="formInput" type="password" placeholder="**********">
           </div>
         </div>
-      </div>
+      </form>
 
       <div class="d-flex gap-3 orderBtnW mt-4 px-4">
         <a class="button button--lg button--transparent border-width-2 px-2" href="#" data-bs-dismiss="modal"
@@ -1096,7 +1096,7 @@
 <!-- modal-edit-cat -->
 <div class="modal fade" id="modal-edit-cat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content p-0 pb-3">
+    <form class="modal-content p-0 pb-3" action="#">
       <div class="fw-bold h2 mx-auto mb-3 text-center px-3 border-b-gray py-3 w-100">Категории</div>
 
       <div class="d-flex gap-2 flex-wrap px-4 justify-content-center">
@@ -1210,7 +1210,6 @@
 
       </div>
 
-
       <div class="d-flex gap-2 orderBtnW mt-4 px-3">
         <button class="button button--lg button--transparent px-2 border-width-2" data-bs-dismiss="modal"
           aria-label="Close" data-bs-target="#modal-edit-cat">
@@ -1224,7 +1223,7 @@
         data-bs-target="#modal-edit-cat">
         <img src="@img/icons/close-black.svg" alt="icon">
       </button>
-    </div>
+    </form>
   </div>
 </div>
 
@@ -1368,7 +1367,7 @@
 <!-- modal-edit-subcat -->
 <div class="modal fade" id="modal-edit-subcat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content p-0 pb-3">
+    <form class="modal-content p-0 pb-3" action="#">
       <div class="fw-bold h2 mx-auto mb-4 text-center px-3 border-b-gray py-3 w-100">Подкатегории</div>
 
       <div class="text--lg fw-bold px-3 text-center mb-3">Алкогольные напитки</div>
@@ -1484,7 +1483,7 @@
       </div>
 
       <div class="d-flex gap-2 orderBtnW mt-4 px-3">
-        <button class="button button--lg button--transparent px-2 border-width-2" data-bs-dismiss="modal"
+        <button type="button" class="button button--lg button--transparent px-2 border-width-2" data-bs-dismiss="modal"
           aria-label="Close" data-bs-target="#modal-edit-subcat">
           Отменить
         </button>
@@ -1496,7 +1495,7 @@
         data-bs-target="#modal-edit-subcat">
         <img src="@img/icons/close-black.svg" alt="icon">
       </button>
-    </div>
+    </form>
   </div>
 </div>
 
@@ -1639,7 +1638,7 @@
 <!-- modal-add-stop -->
 <div class="modal fade" id="modal-add-stop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content p-0 pb-3">
+    <form class="modal-content p-0 pb-3" action="#">
       <div class="fw-bold h2 mx-auto mb-4 text-center px-3 border-b-gray py-3 w-100">Переместить в стоп-лист?</div>
 
       <div class="px-4">
@@ -1649,12 +1648,12 @@
           <span>Блюда из курицы</span>
         </div>
         <div class="text-center h2 mt-3">
-          Курица  в соусе 
+          Курица в соусе
         </div>
       </div>
 
       <div class="d-flex gap-2 orderBtnW mt-4 px-3">
-        <button class="button button--lg button--transparent px-2 border-width-2" data-bs-dismiss="modal"
+        <button type="button" class="button button--lg button--transparent px-2 border-width-2" data-bs-dismiss="modal"
           aria-label="Close" data-bs-target="#modal-add-stop">
           Отменить
         </button>
@@ -1666,6 +1665,92 @@
         data-bs-target="#modal-add-stop">
         <img src="@img/icons/close-black.svg" alt="icon">
       </button>
+    </form>
+  </div>
+</div>
+
+<!-- modal-notification -->
+<div class="modal fade" id="modal-notification" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-0 pb-3">
+      <div class="d-flex justify-content-between align-items-center px-3 modal-head-sticky border-b-gray py-3">
+        <img src="@img/icons/bell-blue.svg" alt="bell">
+        <span class="fw-bold h2 mb-0 text-center">Настроить уведомления</span>
+        <button type="button" class="btn-close static-btn-close opacity-75 m-0 w-auto" data-bs-dismiss="modal"
+          aria-label="Close" data-bs-target="#modal-notification">
+          <img src="@img/icons/close-black.svg" alt="icon">
+        </button>
+      </div>
+      <div class="border-b-outline p-3 text--gray">
+        Уведомления приходят на указанный номер телефона через Телеграм
+      </div>
+
+      <div class="d-flex align-items-center p-3 gap-3 justify-content-between border-b-outline">
+        <span class="text--lg fw-medium">Сотрудник не принял заказ</span>
+        <div class="productIngredientItem p-0 m-0 justify-content-center">
+          <div class="productIngredientAction">
+            <input id="news_public" type="checkbox" hidden checked>
+            <label for="news_public">
+              <div class="rect"></div>
+            </label>
+          </div>
+        </div>
+      </div><!-- /item -->
+      <div class="d-flex align-items-center p-3 gap-3 justify-content-between border-b-outline">
+        <span class="text--lg fw-medium">Сотрудник не отреагировал на вызов к столу</span>
+        <div class="productIngredientItem p-0 m-0 justify-content-center">
+          <div class="productIngredientAction">
+            <input id="news_public_1" type="checkbox" hidden checked>
+            <label for="news_public_1">
+              <div class="rect"></div>
+            </label>
+          </div>
+        </div>
+      </div><!-- /item -->
+      <div class="d-flex align-items-center p-3 gap-3 justify-content-between border-b-outline">
+        <span class="text--lg fw-medium">Уведомление об опоздании на смену</span>
+        <div class="productIngredientItem p-0 m-0 justify-content-center">
+          <div class="productIngredientAction">
+            <input id="news_public_2" type="checkbox" hidden checked>
+            <label for="news_public_2">
+              <div class="rect"></div>
+            </label>
+          </div>
+        </div>
+      </div><!-- /item -->
+      <div class="d-flex align-items-center p-3 gap-3 justify-content-between border-b-outline">
+        <span class="text--lg fw-medium">Уведомление о новом отзыве</span>
+        <div class="productIngredientItem p-0 m-0 justify-content-center">
+          <div class="productIngredientAction">
+            <input id="news_public_3" type="checkbox" hidden checked>
+            <label for="news_public_3">
+              <div class="rect"></div>
+            </label>
+          </div>
+        </div>
+      </div><!-- /item -->
+      <div class="d-flex align-items-center p-3 gap-3 justify-content-between border-b-outline">
+        <span class="text--lg fw-medium">Уведомление о негативной оценке, поставленной сотруднику</span>
+        <div class="productIngredientItem p-0 m-0 justify-content-center">
+          <div class="productIngredientAction">
+            <input id="news_public_4" type="checkbox" hidden checked>
+            <label for="news_public_4">
+              <div class="rect"></div>
+            </label>
+          </div>
+        </div>
+      </div><!-- /item -->
+
+      <div class="d-flex gap-2 orderBtnW mt-4 px-3">
+        <button class="button button--lg button--transparent px-2" data-bs-dismiss="modal" aria-label="Close"
+          data-bs-target="#modal-notification">
+          Отменить
+        </button>
+        <button class="button button--lg button--blue px-2">
+          Сохранить
+        </button>
+      </div>
+
     </div>
   </div>
 </div>

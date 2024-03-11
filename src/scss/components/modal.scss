@@ -60,6 +60,9 @@
   }
   .modalCol33 {
     width: 33%;
+    @media(max-width: 575px){
+      width: 100%;
+    }
   }
 
   &-tea {
@@ -186,10 +189,25 @@
 
 .modalGrid-33 {
  padding: 16px;
+ @media(max-width: 575px){
+  row-gap: 10px;
+ }
 }
 
 .modalCol33 {
   width: 33%;
+}
+.modalCol20 {
+  width: 20%;
+}
+.modalCol25 {
+  width: 25%;
+}
+.modalCol55 {
+  width: 55%;
+}
+.modalCol60 {
+  width: 60%;
 }
 .modal-head-sticky {
   position: sticky;

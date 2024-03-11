@@ -109,6 +109,10 @@
   position: relative;
   max-height: 245px;
 
+  @media(max-width: 575px) {
+    min-height: 225px;
+  }
+
   &::before {
     position: absolute;
     content: '';
@@ -157,6 +161,10 @@
     font-size: 40px;
     line-height: 48px;
     font-weight: 700;
+    @media(max-width: 575px){
+      font-size: 30px;
+      line-height: 40px;
+    }
   }
 }
 
@@ -230,6 +238,10 @@
         object-fit: cover;
       }
     }
+  }
+
+  &--sm {
+    min-height: 180px;
   }
 }
 

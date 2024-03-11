@@ -1,0 +1,73 @@
+<section class="menu">
+  <div class="container admin-container">
+
+    <div class="d-flex align-items-center justify-content-between adminHead flex-wrap gap-3">
+      <a class="adminHeadLink" href="/admin-main-slider.html">
+        <h1 class="h2 mb-0">
+          Редактировать фото
+        </h1>
+      </a>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="addAdminPhoto h-auto">
+          <input id="addAdminPhotoInput" type="file">
+          <div class="addAdminPhotoW foodPhoto" style="background-image: url('@img/icons/camera.svg');">
+
+            <!-- Загрузить фото -->
+            <!-- <label
+              class="addAdminPhotoLabel button d-flex border-width-2 px-3 gap-2 align-items-center justify-content-center button--transparent-tetriary"
+              for="addAdminPhotoInput">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#upload"></use>
+              </svg>
+              Загрузить фото
+            </label> -->
+
+            <!-- Удалить фото -->
+            <button
+              class="addAdminPhotoLabel button d-flex border-width-2 px-3 gap-2 align-items-center justify-content-center button--transparent-tetriary">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#delete-file"></use>
+              </svg>
+              Удалить фото
+            </button>
+
+            <!-- Картинка подгруженная -->
+            <div class="addAdminPhotoImgW">
+              <img class="addAdminPhotoImg" src="@img/admin/human/human.jpeg" alt="human">
+            </div>
+
+          </div>
+        </div><!-- /addAdminPhoto -->
+      </div>
+      <div class="col-md-8">
+        <p class="text--gray mb-3">
+          Для добавления фото в главный слайдер необходимо как минимум добавить фотографию. Заголовок и Подзаголовок
+          опциональны.
+        </p>
+        <div class="inputW mb-3">
+          <div class="formInputName mb-2 text-uppercase fw-medium">
+            Заголовок
+          </div>
+          <input type="text" class="formInput filled" placeholder="Заголовок" value="Aura Verdant">
+        </div>
+        <div class="inputW mb-3">
+          <div class="formInputName mb-2 text-uppercase fw-medium">
+            Ссылка на заголовке
+          </div>
+          <input type="text" class="formInput" placeholder="https://">
+        </div>
+        <div class="inputW mb-3">
+          <div class="formInputName mb-2 text-uppercase fw-medium">
+            Подзаголовок
+          </div>
+          <input type="text" class="formInput filled" placeholder="Подзаголовок"
+            value="• Healthy • Vegan • Vegetarian ">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

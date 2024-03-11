@@ -1,0 +1,182 @@
+<section class="settings">
+  <div class="container admin-container">
+
+    <div class="d-flex align-items-center justify-content-between adminHead">
+      <div class="h1">
+        Настройки системы
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="inputW mb-3">
+          <div class="formInputName mb-2 text-uppercase fw-medium">
+            Название ресторана
+          </div>
+          <input type="text" class="formInput" placeholder="Заголовок">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="inputW mb-3">
+          <div class="formInputName mb-2 text-uppercase fw-medium">
+            почта для связи
+          </div>
+          <input type="email" class="formInput" placeholder="manager@restaurant.kz">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="inputW mb-3">
+          <div class="formInputName mb-2 text-uppercase fw-medium">
+            Внешний вид
+          </div>
+          <select name="settings-theme" id="settings-theme" class="formSelect form-select">
+            <option value="Синяя тема">Синяя тема</option>
+            <option value="Черная тема">Черная тема</option>
+            <option value="Фиолетовая тема">Фиолетовая тема</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="formInputName mb-2 text-uppercase fw-medium">
+          Режим оплаты
+        </div>
+        <div class="radioW d-flex">
+          <div class="radioItem">
+            <input id="payment_1" type="radio" name="type_payment" hidden checked>
+            <label class="radioBtn" for="payment_1">
+              Постоплата
+            </label>
+          </div>
+          <div class="radioItem">
+            <input id="payment_2" type="radio" name="type_payment" hidden>
+            <label class="radioBtn" for="payment_2">Предоплата</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="h3 mb-3">Логотип</div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="formInputName mb-2 text-uppercase fw-medium">
+          для приложения
+        </div>
+        <div class="addAdminPhoto h-auto">
+          <input id="addAdminPhotoInput" type="file">
+          <div class="addAdminPhotoW foodPhoto foodPhoto--sm"
+            style="background-image: url('@img/icons/logo-settings.svg'); background-size: 64px; background-position: top 24px center;">
+
+            <!-- Загрузить фото -->
+            <label
+              class="addAdminPhotoLabel button d-flex px-3 gap-2 align-items-center justify-content-center button--transparent-tetriary"
+              for="addAdminPhotoInput">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#upload"></use>
+              </svg>
+              Загрузить
+            </label>
+
+            <!-- Удалить фото -->
+            <!-- <button
+              class="addAdminPhotoLabel button d-flex border-width-2 px-3 gap-2 align-items-center justify-content-center button--transparent-tetriary">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#delete-file"></use>
+              </svg>
+              Удалить фото
+            </button> -->
+
+            <!-- Картинка подгруженная -->
+            <!-- <div class="addAdminPhotoImgW">
+              <img class="addAdminPhotoImg" src="@img/admin/human/human.jpeg" alt="human">
+            </div> -->
+
+          </div>
+        </div><!-- /addAdminPhoto -->
+        <p class="text--gray">
+          Цветной логотип, горизонтальный формат.<br> Файлы .PNG или .JPG
+        </p>
+      </div>
+      <div class="col-md-4">
+        <div class="formInputName mb-2 text-uppercase fw-medium">
+          для Админки 1
+        </div>
+        <div class="addAdminPhoto h-auto">
+          <input id="addAdminPhotoInput_2" type="file" hidden>
+          <div class="addAdminPhotoW foodPhoto foodPhoto--sm"
+            style="background-image: url('@img/icons/logo-settings.svg'); background-size: 64px; background-position: top 24px center;">
+
+            <!-- Загрузить фото -->
+            <label
+              class="addAdminPhotoLabel button d-flex px-3 gap-2 align-items-center justify-content-center button--transparent-tetriary"
+              for="addAdminPhotoInput_2">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#upload"></use>
+              </svg>
+              Загрузить
+            </label>
+
+            <!-- Удалить фото -->
+            <!-- <button
+              class="addAdminPhotoLabel button d-flex border-width-2 px-3 gap-2 align-items-center justify-content-center button--transparent-tetriary">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#delete-file"></use>
+              </svg>
+              Удалить фото
+            </button> -->
+
+            <!-- Картинка подгруженная -->
+            <!-- <div class="addAdminPhotoImgW">
+              <img class="addAdminPhotoImg" src="@img/admin/human/human.jpeg" alt="human">
+            </div> -->
+
+          </div>
+        </div><!-- /addAdminPhoto -->
+        <p class="text--gray">
+          Белый логотип, горизонтальный формат.<br> Файлы .PNG или .JPG
+        </p>
+      </div>
+      <div class="col-md-4">
+        <div class="formInputName mb-2 text-uppercase fw-medium">
+          для Админки 2
+        </div>
+        <div class="addAdminPhoto h-auto">
+          <input id="addAdminPhotoInput_3" type="file" hidden>
+          <div class="addAdminPhotoW foodPhoto foodPhoto--sm"
+            style="background-image: url('@img/icons/logo-settings.svg'); background-size: 64px; background-position: top 24px center;">
+
+            <!-- Загрузить фото -->
+            <label
+              class="addAdminPhotoLabel button d-flex px-3 gap-2 align-items-center justify-content-center button--transparent-tetriary"
+              for="addAdminPhotoInput_3">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#upload"></use>
+              </svg>
+              Загрузить
+            </label>
+
+            <!-- Удалить фото -->
+            <!-- <button
+              class="addAdminPhotoLabel button d-flex border-width-2 px-3 gap-2 align-items-center justify-content-center button--transparent-tetriary">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#delete-file"></use>
+              </svg>
+              Удалить фото
+            </button> -->
+
+            <!-- Картинка подгруженная -->
+            <!-- <div class="addAdminPhotoImgW">
+              <img class="addAdminPhotoImg" src="@img/admin/human/human.jpeg" alt="human">
+            </div> -->
+
+          </div>
+        </div><!-- /addAdminPhoto -->
+
+        <p class="text--gray">
+          Белый логотип, квадрат или вертикальный формат.<br> Файлы .PNG или .JPG
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>

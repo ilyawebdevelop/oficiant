@@ -91,6 +91,9 @@
   }
 
   &Ingredient {
+    &Action {
+      height: 23px;
+    }
     &Item {
       margin-bottom: 12px;
       padding-top: 4px;
@@ -117,6 +120,7 @@
         width: 40px;
         min-width: 40px;
         height: 24px;
+        cursor: pointer;
 
         &::before {
           content: '';
@@ -213,6 +217,13 @@
       width: 48px;
       height: 48px;
     }   
+  }
+  &.no-hover {
+    img {
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 }
 

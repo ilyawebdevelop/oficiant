@@ -1,131 +1,133 @@
 <section class="personal">
-  <div class="container admin-container">
+  <form action="#">
 
-    <div class="d-flex align-items-center justify-content-between adminHead flex-wrap gap-3">
-      <a class="adminHeadLink" href="/admin-personal-list.html">
-        <h1 class="h2 mb-0">
-          Редактировать сотрудника
-        </h1>
-      </a>
-      <button class="blockBtn d-flex align-items-center gap-2 fw-medium">
-        <svg>
-          <use xlink:href="img/icons/icons.svg#block-icon"></use>
-        </svg>
-        Заблокировать
-      </button>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="addAdminPhoto">
-          <input id="addAdminPhotoInput" type="file">
-          <div class="addAdminPhotoW h-auto" style="background-image: url('@img/icons/person-lg.svg');">
-
-            <!-- Удалить фото -->
-            <button
-              class="addAdminPhotoLabel removeAdminPhoto button d-flex border-width-2 px-3 gap-2 align-items-center justify-content-center button--transparent-tetriary">
-              <svg>
-                <use xlink:href="img/icons/icons.svg#delete-file"></use>
-              </svg>
-              Удалить фото
-            </button>
-
-            <!-- Картинка подгруженная -->
-            <div class="addAdminPhotoImgW h-auto">
-              <img class="addAdminPhotoImg" src="@img/admin/human/human.jpeg" alt="human">
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-8 mt-4 mt-lg-0">
-        <div class="inputW mb-3">
-          <div class="inputName text-uppercase fw-medium text--sm mb-2">
-            Фамилия
-          </div>
-          <input class="formInput filled" type="text" placeholder="Фамилия" value="Петров">
-        </div>
-        <div class="inputW mb-3">
-          <div class="inputName text-uppercase fw-medium text--sm mb-2">
-            Имя
-          </div>
-          <input class="formInput filled" type="text" placeholder="Имя" value="Иван">
-        </div>
-        <div class="inputW mb-3">
-          <div class="inputName text-uppercase fw-medium text--sm mb-2">
-            Отчество
-          </div>
-          <input class="formInput filled" type="text" placeholder="Отчество" value="Иванович">
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="inputW mb-3">
-              <div class="inputName text-uppercase fw-medium text--sm mb-2">
-                номер телефона
-              </div>
-              <input class="formInput filled" type="tel" placeholder="+ 7 (_ _ _) _ _ _  _ _  _ _"
-                value="+ 7 (123) 456 78 90">
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="inputW mb-3">
-              <div class="inputName text-uppercase fw-medium text--sm mb-2">
-                Должность
-              </div>
-              <select name="workSelect" id="workSelect" class="form-select formSelect filled">
-                <option value="Выбрать должность">Выбрать должность</option>
-                <option value="Выбрать должность 2">Выбрать должность 2</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="inputW mb-3">
-              <div class="inputName text-uppercase fw-medium text--sm mb-2">
-                EMAIL
-              </div>
-              <input class="formInput filled" type="email" placeholder="user@address.com" value="petrov@address.com">
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="inputW mb-3">
-              <div class="inputName text-uppercase fw-medium text--sm mb-2">
-                Пароль
-              </div>
-              <input class="formInput filled" type="password" placeholder="**********">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <a href="#" class="text--blue text-end mt-1 text--sm">Сбросить пароль</a>
-
-
-  </div>
-
-  <div class="border-top-outline mt-5">
     <div class="container admin-container">
-      <div class="row py-4 border-t-outline">
+
+      <div class="d-flex align-items-center justify-content-between adminHead flex-wrap gap-3">
+        <a class="adminHeadLink" href="/admin-personal-list.html">
+          <h1 class="h2 mb-0">
+            Редактировать сотрудника
+          </h1>
+        </a>
+        <button class="blockBtn d-flex align-items-center gap-2 fw-medium">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#block-icon"></use>
+          </svg>
+          Заблокировать
+        </button>
+      </div>
+
+      <div class="row">
         <div class="col-lg-4">
-          <button class="button button--transparent button--lg border-width-2 px-4">Удалить</button>
+          <div class="addAdminPhoto">
+            <input id="addAdminPhotoInput" type="file">
+            <div class="addAdminPhotoW h-auto" style="background-image: url('@img/icons/person-lg.svg');">
+
+              <!-- Удалить фото -->
+              <button
+                class="addAdminPhotoLabel removeAdminPhoto button d-flex border-width-2 px-3 gap-2 align-items-center justify-content-center button--transparent-tetriary">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#delete-file"></use>
+                </svg>
+                Удалить фото
+              </button>
+
+              <!-- Картинка подгруженная -->
+              <div class="addAdminPhotoImgW h-auto">
+                <img class="addAdminPhotoImg" src="@img/admin/human/human.jpeg" alt="human">
+              </div>
+
+            </div>
+          </div>
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-8 mt-4 mt-lg-0">
+          <div class="inputW mb-3">
+            <div class="inputName text-uppercase fw-medium text--sm mb-2">
+              Фамилия
+            </div>
+            <input class="formInput filled" type="text" placeholder="Фамилия" value="Петров">
+          </div>
+          <div class="inputW mb-3">
+            <div class="inputName text-uppercase fw-medium text--sm mb-2">
+              Имя
+            </div>
+            <input class="formInput filled" type="text" placeholder="Имя" value="Иван">
+          </div>
+          <div class="inputW mb-3">
+            <div class="inputName text-uppercase fw-medium text--sm mb-2">
+              Отчество
+            </div>
+            <input class="formInput filled" type="text" placeholder="Отчество" value="Иванович">
+          </div>
           <div class="row">
             <div class="col-lg-6">
-              <a class="button button--lg button--transparent border-width-2 px-2 w-100 mt-3 mt-lg-0" href="#" data-bs-dismiss="modal"
-              aria-label="Close" data-bs-target="#modal-add-admin">
-              Отменить
-            </a>
+              <div class="inputW mb-3">
+                <div class="inputName text-uppercase fw-medium text--sm mb-2">
+                  номер телефона
+                </div>
+                <input class="formInput filled" type="tel" placeholder="+ 7 (_ _ _) _ _ _  _ _  _ _"
+                  value="+ 7 (123) 456 78 90">
+              </div>
             </div>
-            <div class="col-lg-6 mt-3 mt-lg-0">
-              <button class="button button--lg button--blue w-100">
-                Сохранить
-              </button>
+            <div class="col-lg-6">
+              <div class="inputW mb-3">
+                <div class="inputName text-uppercase fw-medium text--sm mb-2">
+                  Должность
+                </div>
+                <select name="workSelect" id="workSelect" class="form-select formSelect filled">
+                  <option value="Выбрать должность">Выбрать должность</option>
+                  <option value="Выбрать должность 2">Выбрать должность 2</option>
+                </select>
+              </div>
             </div>
-          </div>     
+            <div class="col-lg-6">
+              <div class="inputW mb-3">
+                <div class="inputName text-uppercase fw-medium text--sm mb-2">
+                  EMAIL
+                </div>
+                <input class="formInput filled" type="email" placeholder="user@address.com" value="petrov@address.com">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="inputW mb-3">
+                <div class="inputName text-uppercase fw-medium text--sm mb-2">
+                  Пароль
+                </div>
+                <input class="formInput filled" type="password" placeholder="**********">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="text--blue text-end mt-1 text--sm">Сбросить пароль</a>
+
+    </div>
+
+    <div class="border-top-outline mt-5">
+      <div class="container admin-container">
+        <div class="row py-4 border-t-outline">
+          <div class="col-lg-4">
+            <button class="button button--transparent button--lg border-width-2 px-4 mx-auto mx-sm-0">Удалить</button>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-6">
+                <a class="button button--lg button--transparent border-width-2 px-2 w-100 mt-3 mt-lg-0" href="#"
+                  data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-add-admin">
+                  Отменить
+                </a>
+              </div>
+              <div class="col-lg-6 mt-3 mt-lg-0">
+                <button class="button button--lg button--blue w-100">
+                  Сохранить
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </form>
 
 </section>

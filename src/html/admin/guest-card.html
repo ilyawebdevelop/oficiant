@@ -1,0 +1,289 @@
+<section class="guest">
+  <div class="container admin-container">
+
+    <div class="d-flex align-items-center justify-content-between adminHead flex-wrap gap-3">
+      <a class="adminHeadLink" href="/admin-guest.html">
+        <h1 class="h2 mb-0">
+          Карточка пользователя
+        </h1>
+      </a>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center p-2 gap-3 flex-wrap">
+      <div class="d-flex gap-3 align-items-center">
+        <div class="productImg productImg--md no-hover">
+          <img src="@img/admin/intro/image-2.png" alt="image-1">
+        </div>
+        <h3 class="text--lg h3">
+          Омарова Карина Мадиевна
+        </h3>
+      </div>
+      <div class="d-flex gap-3">
+        <button class="buttonRound">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#edit"></use>
+          </svg>
+        </button>
+        <button class="buttonRound">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#cart-action"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="tabs mt-4" data-tabs="popup">
+      <ul class="tabs__nav mb-1 mb-md-4 flex-wrap">
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">История заказов</button></li>
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Избранное</button></li>
+      </ul>
+      <div class="tabs__content">
+        <div class="tabs__panel">
+
+          <div class="d-flex justify-content-between gap-3 flex-wrap mb-4">
+            <div class="selectW">
+              <select name="history-select" id="history-select" class="formSelect form-select">
+                <option value="Вся история">Вся история</option>
+                <option value="Вся история история">Вся история история</option>
+              </select>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <span>Сортировка:</span>
+              <select class="form-select formSelect formSelect--transparent" name="dateSort" id="dateSort">
+                <option value="bydate">по алфавиту</option>
+                <option value="bydate">по дате</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="border-t-outline">
+            <div class="border-b-outline">
+              <div class="row align-items-center p-2 position-relative">
+                <div class="col-md-9">
+                  <div class="d-flex align-items-start align-items-sm-center gap-1 gap-sm-3 flex-column flex-sm-row mb-1 bm-sm-0">
+                    <span>#162432</span>
+                    <div class="d-flex gap-2">
+                      <span>25.01.2024</span>
+                      <span>21:13</span>
+                    </div>
+
+                    <div class="personListW mx-3" data-bs-toggle="modal" data-bs-target="#modal-guests">
+                      <div class="personList">
+                        <a href="#" class="personItem">
+                          <img src="@img/admin/human/human.jpeg" alt="person">
+                        </a>
+                        <div class="personItem">
+                          <img src="@img/admin/human/human.jpeg" alt="person">
+                        </div>
+                        <a href="#" class="personItem">
+                          <span>Х</span>
+                        </a>
+                        <a href="#" class="personItem"
+                          style="background-color: var(--disabled); background-image: url('@img/icons/person-black.svg');">
+                        </a>
+                        <a href="#" class="personItem">
+                          <img src="@img/admin/human/human.jpeg" alt="person">
+                        </a>
+                        <div class="personItem">
+                          <img src="@img/admin/human/human.jpeg" alt="person">
+                        </div>
+                        <a href="#" class="personItem">
+                          <span>Х</span>
+                        </a>
+                      </div><!-- /personList -->
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <span class="fw-medium text-start text-md-end d-block">228 270 ₸</span>
+                </div>
+                <button class="historyCheck" data-bs-toggle="modal" data-bs-target="#modal-check-history"></button>
+              </div>
+            </div>
+
+            <div class="border-b-outline">
+              <div class="row align-items-center p-2 position-relative">
+                <div class="col-md-9">
+                  <div class="d-flex align-items-start align-items-sm-center gap-1 gap-sm-3 flex-column flex-sm-row mb-1 bm-sm-0">
+                    <span>#162432</span>
+                    <div class="d-flex gap-2">
+                      <span>25.01.2024</span>
+                      <span>21:13</span>
+                    </div>
+
+                    <div class="personListW mx-3" data-bs-toggle="modal" data-bs-target="#modal-guests">
+                      <div class="personList">
+
+                        <a href="#" class="personItem">
+                          <img src="@img/admin/human/human.jpeg" alt="person">
+                        </a>
+                        <div class="personItem">
+                          <img src="@img/admin/human/human.jpeg" alt="person">
+                        </div>
+                        <a href="#" class="personItem">
+                          <span>Х</span>
+                        </a>
+                      </div><!-- /personList -->
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <span class="fw-medium text-start text-md-end d-block">228 270 ₸</span>
+                </div>
+                <button class="historyCheck" data-bs-toggle="modal" data-bs-target="#modal-check-history"></button>
+              </div>
+            </div>
+
+            <div class="border-b-outline">
+              <div class="row align-items-center p-2 position-relative">
+                <div class="col-md-9">
+                  <div class="d-flex align-items-start align-items-sm-center gap-1 gap-sm-3 flex-column flex-sm-row mb-1 bm-sm-0">
+                    <span>#162432</span>
+                    <div class="d-flex gap-2">
+                      <span>25.01.2024</span>
+                      <span>21:13</span>
+                    </div>
+
+                    <div class="personListW mx-3" data-bs-toggle="modal" data-bs-target="#modal-guests">
+                      <div class="personList">
+                        <a href="#" class="personItem"
+                          style="background-color: var(--disabled); background-image: url('@img/icons/person-black.svg');">
+                        </a>
+                      </div><!-- /personList -->
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <span class="fw-medium text-start text-md-end d-block">15 258 ₸</span>
+                </div>
+                <button class="historyCheck" data-bs-toggle="modal" data-bs-target="#modal-check-history"></button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="tabs__panel">
+
+          <div class="border-b-outline">
+
+          </div>
+
+          <div class="d-flex align-items-start align-items-sm-center justify-content-between p-2 gap-3 border-b-outline flex-column flex-sm-row">
+            <div class="d-flex gap-3 align-items-center">
+              <a href="#" class="productImg productImg--md">
+                <img src="@img/admin/intro/image-2.png" alt="image-1">
+              </a>
+              <div class="d-flex flex-column justify-content-center">
+                <a class="text--lg fw-medium mb-1" href="#">Johnnie Walker Black Label 12 лет 0,7 л</a>
+                <div class="d-flex gap-1 flex-wrap">
+                  <span class="text--sm text--gray fw-medium">Алкогольные напитки</span>
+                  <span class="text--sm text--gray fw-medium"> / </span>
+                  <span class="text--sm text--gray fw-medium"> Виски </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start align-items-sm-center gap-1 gap-sm-3 flex-column flex-sm-row mb-1 bm-sm-0">
+              <span class="fw-medium text-nowrap">2 990 ₸</span>
+
+              <button class="buttonRound buttonRound--star">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+              </button>
+            </div>
+
+          </div><!-- item -->
+
+          <div class="d-flex align-items-start align-items-sm-center justify-content-between p-2 gap-3 border-b-outline flex-column flex-sm-row">
+            <div class="d-flex gap-3 align-items-center">
+              <a href="#" class="productImg productImg--md">
+                <img src="@img/admin/intro/image-2.png" alt="image-1">
+              </a>
+              <div class="d-flex flex-column justify-content-center">
+                <a class="text--lg fw-medium mb-1" href="#">Johnnie Walker Black Label 12 лет 0,7 л</a>
+                <div class="d-flex gap-1 flex-wrap">
+                  <span class="text--sm text--gray fw-medium">Алкогольные напитки</span>
+                  <span class="text--sm text--gray fw-medium"> / </span>
+                  <span class="text--sm text--gray fw-medium"> Виски </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start align-items-sm-center gap-1 gap-sm-3 flex-column flex-sm-row mb-1 bm-sm-0">
+              <span class="fw-medium text-nowrap">2 990 ₸</span>
+
+              <button class="buttonRound buttonRound--star">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+              </button>
+            </div>
+
+          </div><!-- item -->
+
+          <div class="d-flex align-items-start align-items-sm-center justify-content-between p-2 gap-3 border-b-outline flex-column flex-sm-row">
+            <div class="d-flex gap-3 align-items-center">
+              <a href="#" class="productImg productImg--md">
+                <img src="@img/admin/intro/image-2.png" alt="image-1">
+              </a>
+              <div class="d-flex flex-column justify-content-center">
+                <a class="text--lg fw-medium mb-1" href="#">Johnnie Walker Black Label 12 лет 0,7 л</a>
+                <div class="d-flex gap-1 flex-wrap">
+                  <span class="text--sm text--gray fw-medium">Алкогольные напитки</span>
+                  <span class="text--sm text--gray fw-medium"> / </span>
+                  <span class="text--sm text--gray fw-medium"> Виски </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start align-items-sm-center gap-1 gap-sm-3 flex-column flex-sm-row mb-1 bm-sm-0">
+              <span class="fw-medium text-nowrap">2 990 ₸</span>
+
+              <button class="buttonRound buttonRound--star">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+              </button>
+            </div>
+
+          </div><!-- item -->
+
+          <div class="d-flex align-items-start align-items-sm-center justify-content-between p-2 gap-3 border-b-outline flex-column flex-sm-row">
+            <div class="d-flex gap-3 align-items-center">
+              <a href="#" class="productImg productImg--md">
+                <img src="@img/admin/intro/image-2.png" alt="image-1">
+              </a>
+              <div class="d-flex flex-column justify-content-center">
+                <a class="text--lg fw-medium mb-1" href="#">Johnnie Walker Black Label 12 лет 0,7 л Johnnie Walker Black Label 12 лет 0,7 л</a>
+                <div class="d-flex gap-1 flex-wrap">
+                  <span class="text--sm text--gray fw-medium">Алкогольные напитки</span>
+                  <span class="text--sm text--gray fw-medium"> / </span>
+                  <span class="text--sm text--gray fw-medium"> Виски </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start align-items-sm-center gap-1 gap-sm-3 flex-column flex-sm-row mb-1 bm-sm-0">
+              <span class="fw-medium text-nowrap">2 990 ₸</span>
+
+              <button class="buttonRound buttonRound--star">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+              </button>
+            </div>
+
+          </div><!-- item -->
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,74 @@
+<section class="news">
+  <div class="container admin-container">
+
+    <div class="d-flex align-items-center justify-content-between adminHead flex-wrap gap-3">
+      <a class="adminHeadLink" href="/admin-news.html">
+        <h1 class="h2 mb-0">
+          Создать новость
+        </h1>
+      </a>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="addAdminPhoto h-auto">
+          <input id="addAdminPhotoInput" type="file">
+          <div class="addAdminPhotoW foodPhoto" style="background-image: url('@img/icons/camera.svg');">
+
+            <!-- Загрузить фото -->
+            <label
+              class="addAdminPhotoLabel button d-flex border-width-2 px-3 gap-2 align-items-center justify-content-center button--transparent-tetriary"
+              for="addAdminPhotoInput">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#upload"></use>
+              </svg>
+              Загрузить фото
+            </label>
+
+            <!-- Удалить фото -->
+            <!-- <button
+              class="addAdminPhotoLabel button d-flex border-width-2 px-3 gap-2 align-items-center justify-content-center button--transparent-tetriary">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#delete-file"></use>
+              </svg>
+              Удалить фото
+            </button> -->
+
+            <!-- Картинка подгруженная -->
+            <!-- <div class="addAdminPhotoImgW">
+              <img class="addAdminPhotoImg" src="@img/admin/human/human.jpeg" alt="human">
+            </div> -->
+
+          </div>
+        </div><!-- /addAdminPhoto -->
+      </div>
+      <div class="col-md-8 mt-2 mt-md-0">
+        <div class="inputW mb-3">
+          <div class="formInputName mb-2 text-uppercase fw-medium">
+            Заголовок новости
+          </div>
+          <input type="text" class="formInput" placeholder="Заголовок">
+        </div>
+        <div class="inputW mb-3">
+          <div class="formInputName mb-2 text-uppercase fw-medium">
+            Описание
+          </div>
+          <textarea name="descr-food" id="descr-food" cols="30" rows="4" class="formText formText--sm textarea-noscroll"
+            placeholder="Текст"></textarea>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <span class="text--lg">Опубликовать сейчас</span>
+          <div class="productIngredientItem p-0 m-0 justify-content-center">
+            <div class="productIngredientAction">
+              <input id="news_public" type="checkbox" hidden checked>
+              <label for="news_public">
+                <div class="rect"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

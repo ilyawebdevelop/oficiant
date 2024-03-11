@@ -7,7 +7,7 @@
           Добавить блюдо
         </h1>
       </a>
-      <button class="button gap-2 fw-medium stop-lg" disabled>
+      <button class="button gap-2 fw-medium stop-lg px-0" disabled>
         <svg>
           <use xlink:href="img/icons/icons.svg#stop-lg"></use>
         </svg>
@@ -16,7 +16,7 @@
     </div>
 
     <div class="row mb-4">
-      <div class="col-lg-8">
+      <div class="col-md-8">
         <div class="inputW">
           <div class="formInputName mb-2 text-uppercase fw-medium">
             Название
@@ -24,7 +24,7 @@
           <input type="text" class="formInput" placeholder="Название блюда">
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-md-4 mt-2 mt-md-0">
         <div class="inputW">
           <div class="formInputName mb-2 text-uppercase fw-medium">
             ID блюда
@@ -43,7 +43,7 @@
       <div class="tabs__content">
         <div class="tabs__panel">
           <div class="row mb-4">
-            <div class="col-lg-6">
+            <div class="col-md-6">
               <div class="inputW">
                 <div class="formInputName mb-2 text-uppercase fw-medium">
                   Категория
@@ -57,7 +57,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-md-6 mt-2 mt-md-0">
               <div class="inputW">
                 <div class="formInputName mb-2 text-uppercase fw-medium">
                   Подкатегория
@@ -73,7 +73,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-md-4">
               <div class="addAdminPhoto">
                 <input id="addAdminPhotoInput" type="file">
                 <div class="addAdminPhotoW foodPhoto" style="background-image: url('@img/icons/camera.svg');">
@@ -105,7 +105,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-8">
+            <div class="col-md-8 mt-2 mt-md-0">
               <div class="inputW mb-3">
                 <div class="formInputName mb-2 text-uppercase fw-medium">
                   Описание
@@ -125,14 +125,14 @@
         <div class="tabs__panel">
 
           <div class="border-b-outline">
-            <div class="row pb-3 pt-3">
-              <div class="col-lg-4">
+            <div class="row pb-3 pt-3 d-none d-md-flex">
+              <div class="col-md-4 mb-2 mb-md-0">
                 <span class="text--lg fw-medium">Наименование</span>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4 mb-2 mb-md-0">
                 <span class="text--lg fw-medium">Параметр</span>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <span class="text--lg fw-medium">Единица измерения</span>
               </div>
             </div>
@@ -140,17 +140,17 @@
 
           <div class="border-b-outline py-3">
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-md-4 mb-2 mb-md-0">
                 <div class="inputW">
                   <input type="text" class="formInput" placeholder="Наименование">
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4 mb-2 mb-md-0">
                 <div class="inputW">
                   <input type="text" class="formInput" placeholder="Параметр">
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <div class="inputW">
                   <input type="text" class="formInput" placeholder="Единица измерения">
                 </div>
@@ -160,17 +160,17 @@
 
           <div class="border-b-outline py-3">
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-md-4 mb-2 mb-md-0">
                 <div class="inputW">
                   <input type="text" class="formInput filled" placeholder="Наименование" value="Вес">
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4 mb-2 mb-md-0">
                 <div class="inputW">
                   <input type="text" class="formInput filled" placeholder="Параметр" value="250">
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <div class="inputW">
                   <input type="text" class="formInput filled" placeholder="Единица измерения" value="грамм">
                 </div>
@@ -188,11 +188,11 @@
         </div>
         <div class="tabs__panel">
           <div class="border-b-outline">
-            <div class="row pb-3 pt-3">
-              <div class="col-lg-8">
+            <div class="row pb-3 pt-3 d-none d-md-flex">
+              <div class="col-md-8">
                 <span class="text--lg fw-medium">Наименование</span>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <span class="text--lg fw-medium">По умолчанию</span>
               </div>
             </div>
@@ -200,14 +200,14 @@
 
           <div class="border-b-outline py-3">
             <div class="row align-items-center">
-              <div class="col-lg-8">
+              <div class="col-md-8">
                 <div class="inputW">
                   <input type="text" class="formInput filled" value="Соль" placeholder="Наименование">
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <div class="row">
-                  <div class="col-lg-6">
+                  <div class="col-md-6">
                     <div class="productIngredientItem mb-0 justify-content-center">
                       <div class="productIngredientAction">
                         <input id="ingred_4" type="checkbox" hidden="" checked="">
@@ -217,7 +217,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-md-6">
                     <button class="buttonRound ml-auto">
                       <svg>
                         <use xlink:href="img/icons/icons.svg#remove"></use>
@@ -231,14 +231,14 @@
 
           <div class="border-b-outline py-3">
             <div class="row align-items-center">
-              <div class="col-lg-8">
+              <div class="col-md-8">
                 <div class="inputW">
                   <input type="text" class="formInput filled" value="Чеснок" placeholder="Наименование">
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <div class="row">
-                  <div class="col-lg-6">
+                  <div class="col-md-6">
                     <div class="productIngredientItem mb-0 justify-content-center">
                       <div class="productIngredientAction">
                         <input id="ingred_5" type="checkbox" hidden>
@@ -248,7 +248,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-md-6">
                     <button class="buttonRound ml-auto">
                       <svg>
                         <use xlink:href="img/icons/icons.svg#remove"></use>
@@ -262,14 +262,14 @@
 
           <div class="border-b-outline py-3">
             <div class="row align-items-center">
-              <div class="col-lg-8">
+              <div class="col-md-8">
                 <div class="inputW">
                   <input type="text" class="formInput" placeholder="Наименование">
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <div class="row">
-                  <div class="col-lg-6">
+                  <div class="col-md-6">
                     <div class="productIngredientItem mb-0 justify-content-center">
                       <div class="productIngredientAction">
                         <input id="ingred_8" type="checkbox" hidden checked>
@@ -279,7 +279,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-md-6">
                     <button class="buttonRound ml-auto">
                       <svg>
                         <use xlink:href="img/icons/icons.svg#remove"></use>

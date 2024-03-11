@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Гости - Карточка пользователя - Редактирование пользователя"
+})
+
+<body>
+
+	<form class="wrapper wrapperAdmin">
+		<main class="main main-action">
+			@@include('html/admin/guest-card-edit.html',{})
+		</main>
+		@@include('html/footer-action-active.html',{})
+		@@include('html/footer-admin.html',{})
+	</form>
+	@@include('html/modal.html',{})
+
+	<script src="js/app.min.js"></script>
+
+
+</body>
+
+</html>

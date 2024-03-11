@@ -11,255 +11,173 @@
 
 	<link rel="stylesheet" href="css/style.min.css">
 
-	<title>О нас - О ресторане</title>
+	<title>Гости - Карточка пользователя - История заказов</title>
 </head>
 
 <body>
 
 	<div class="wrapper wrapperAdmin">
-		<main class="main main-action">
-			<section class="about">
+		<main class="main">
+			<section class="guest">
   <div class="container admin-container">
 
-    <div class="d-flex align-items-center justify-content-between adminHead">
-      <div class="h1">
-        О нас
+    <div class="d-flex align-items-center justify-content-between adminHead flex-wrap gap-3">
+      <a class="adminHeadLink" href="/admin-guest-card.html">
+        <h1 class="h2 mb-0">
+          История изменений профиля
+        </h1>
+      </a>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-lg-9">
+        <div class="searchW">
+          <input class="searchInput searchInput--lg" type="search" placeholder="Поиск">
+          <button class="searchInputBtn">
+            <img src="img/icons/search-icon.svg" alt="button">
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-3 mt-3 mt-lg-0">
+        <div class="inputW">
+          <input type="date" class="form-date formInput">
+        </div>
       </div>
     </div>
 
-    <div class="tabs" data-tabs="popup">
-      <ul class="tabs__nav mb-4">
-        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">О ресторане</button></li>
-        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Филиалы</button></li>
+    <div class="border-t-outline">
 
-      </ul>
-      <div class="tabs__content">
-        <div class="tabs__panel">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="addAdminPhoto h-auto">
-                <input id="addAdminPhotoInput" type="file">
-                <div class="addAdminPhotoW foodPhoto" style="background-image: url('img/icons/camera.svg');">
-
-                  <!-- Загрузить фото -->
-                  <!-- <label
-                    class="addAdminPhotoLabel button d-flex border-width-2 px-3 gap-2 align-items-center justify-content-center button--transparent-tetriary"
-                    for="addAdminPhotoInput">
-                    <svg>
-                      <use xlink:href="img/icons/icons.svg#upload"></use>
-                    </svg>
-                    Загрузить фото
-                  </label> -->
-
-                  <!-- Удалить фото -->
-                  <button
-                    class="addAdminPhotoLabel button d-flex border-width-2 px-3 gap-2 align-items-center justify-content-center button--transparent-tetriary">
-                    <svg>
-                      <use xlink:href="img/icons/icons.svg#delete-file"></use>
-                    </svg>
-                    Удалить фото
-                  </button>
-
-                  <!-- Картинка подгруженная -->
-                  <div class="addAdminPhotoImgW">
-                    <img class="addAdminPhotoImg" src="img/admin/human/human.jpeg" alt="human">
-                  </div>
-
-                </div>
-              </div><!-- /addAdminPhoto -->
-
-              <div class="foodPhotoGal">
-
-                <div class="foodPhotoGalImg foodPhotoGalImg--gradient" style="background-color: var(--background);">
-                  <img src="img/admin/intro/image-1.png" alt="image">
-                  <button class="foodPhotoRemove">
-                    <img src="img/icons/remove.svg" alt="upload-photo">
-                  </button>
-                </div>
-
-                <div class="foodPhotoGalImg foodPhotoGalImg--gradient" style="background-color: var(--background);">
-                  <img src="img/admin/intro/image-2.png" alt="image">
-                  <button class="foodPhotoRemove">
-                    <img src="img/icons/remove.svg" alt="upload-photo">
-                  </button>
-                </div>
-
-                <div class="foodPhotoGalImg" style="background-color: var(--background);">
-                  <button class="foodPhotoGalUpload">
-                    <img src="img/icons/upload-photo.svg" alt="upload-photo">
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-8">
-              <div class="inputW mb-3">
-                <div class="formInputName mb-2 text-uppercase fw-medium">
-                  Заголовок
-                </div>
-                <input type="text" class="formInput filled" value="Ресторан «Aura Verdant»">
-              </div>
-              <div class="inputW mb-3">
-                <div class="formInputName mb-2 text-uppercase fw-medium">
-                  Описание
-                </div>
-                <textarea name="descr-food" id="descr-food" cols="30" rows="4"
-                  class="formText formText--sm textarea-noscroll filled">Нежное куриное филе подается с ароматным сочетанием трав и свежего лимона, которое не только дает блюду особенный вкус, но и придает ему свежесть и аппетитный аромат.
-Блюдо подается с сочным овощным гарниром, состоящим из свежих овощей, обжаренных на оливковом масле и посыпанных разнообразными специями.
-Оно идеально подходит для ужина или обеда в нашем ресторане. Насладитесь сочным и ароматным вкусом блюда.</textarea>
-              </div>
-
-            </div>
+      <div class="p-2 border-b-outline">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-1">
+          <div class="d-flex gap-2">
+            <span class="fw-medium">Иванов Иван Иванович</span>
+            <span class="text--gray fw-medium">Администратор</span>
           </div>
+          <div class="d-flex align-items-center gap-3">
+            <div class="d-flex gap-2">
+              <span class="fw-medium">20:39</span>
+              <span class="fw-medium">25.01.2024</span>
+            </div>
+            <button class="buttonRound">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#update"></use>
+              </svg>
+            </button>
+          </div>
+        </div><!-- /top -->
+        <div class="d-flex gap-2 flex-wrap">
+          <span class="fw-medium">Создано:</span>
+          <span class="text-uppercase">ФОТО</span>
         </div>
-        <div class="tabs__panel">
+      </div><!-- /item -->
 
-        <div class="filItem">
-          <div class="d-flex align-items-center justify-content-between p-3 border-b-outline">
-
-            <div class="d-flex gap-3">
-              <button class="dropAndDrag">
-                <img src="img/icons/drop-and-drag.svg" alt="drag">
-              </button>
-              <div class="h3">
-                Филиал 1
-              </div>
-
+      <div class="p-2 border-b-outline">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-1">
+          <div class="d-flex gap-2">
+            <span class="fw-medium">Иванов Иван Иванович</span>
+            <span class="text--gray fw-medium">Администратор</span>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <div class="d-flex gap-2">
+              <span class="fw-medium">20:39</span>
+              <span class="fw-medium">25.01.2024</span>
             </div>
-
             <button class="buttonRound">
               <svg>
-                <use xlink:href="img/icons/icons.svg#remove"></use>
+                <use xlink:href="img/icons/icons.svg#update"></use>
               </svg>
             </button>
           </div>
+        </div><!-- /top -->
+        <div class="d-flex gap-2 flex-wrap">
+          <span class="fw-medium">Изменено:</span>
+          <span class="text-uppercase">НОМЕР ТЕЛЕФОНА</span>
+          <span class="text-uppercase">+ 7 (123) 456 78 90</span>
+        </div>
+      </div><!-- /item -->
 
-          <div class="p-4">
-
-            <div class="row">
-              <div class="col">
-                <div class="inputW mb-3">
-                  <div class="formInputName mb-2 text-uppercase fw-medium">
-                    Наименование Филиала
-                  </div>
-                  <input type="text" class="formInput filled" value="Филиал 1">
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-6 mb-3">
-                <div class="inputW">
-                  <div class="formInputName mb-2 text-uppercase fw-medium">
-                    Адрес филиала
-                  </div>
-                  <input type="text" class="formInput filled" value="Астана, улица Арай, 29">
-                </div>
-              </div>
-              <div class="col-lg-6 mb-3">
-                <div class="inputW">
-                  <div class="formInputName mb-2 text-uppercase fw-medium">
-                    Время работы
-                  </div>
-                  <input type="text" class="formInput filled" value="Ежедневно с 10:00 до 24:00">
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <div class="inputW">
-                  <div class="formInputName mb-2 text-uppercase fw-medium">
-                    Описание
-                  </div>
-                  <textarea name="descr-food" id="descr-food" cols="30" rows="2"
-                    class="formText formText--sm textarea-noscroll filled">Краткое описание филиала. "Aura Verdant" - это место, где вы сможете насладиться изысканной кухней и приятной атмосферой. Приходите и разделите с нами вкус жизни!</textarea>
-                </div>
-              </div>
-            </div>
-
+      <div class="p-2 border-b-outline">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-1">
+          <div class="d-flex gap-2">
+            <span class="fw-medium">Иванов Иван Иванович</span>
+            <span class="text--gray fw-medium">Администратор</span>
           </div>
-
-
-        </div><!-- /filItem -->
-
-        <div class="filItem">
-          <div class="d-flex align-items-center justify-content-between p-3 border-b-outline">
-
-            <div class="d-flex gap-3">
-              <button class="dropAndDrag">
-                <img src="img/icons/drop-and-drag.svg" alt="drag">
-              </button>
-              <div class="h3">
-                Филиал 2
-              </div>
-
+          <div class="d-flex align-items-center gap-3">
+            <div class="d-flex gap-2">
+              <span class="fw-medium">20:39</span>
+              <span class="fw-medium">25.01.2024</span>
             </div>
-
             <button class="buttonRound">
               <svg>
-                <use xlink:href="img/icons/icons.svg#remove"></use>
+                <use xlink:href="img/icons/icons.svg#update"></use>
               </svg>
             </button>
           </div>
+        </div><!-- /top -->
+        <div class="d-flex gap-2 flex-wrap">
+          <span class="fw-medium">Удалено:</span>
+          <span class="text-uppercase">ФОТО</span>
+        </div>
+      </div><!-- /item -->
 
-          <div class="p-4">
-
-            <div class="row">
-              <div class="col">
-                <div class="inputW mb-3">
-                  <div class="formInputName mb-2 text-uppercase fw-medium">
-                    Наименование Филиала
-                  </div>
-                  <input type="text" class="formInput" placeholder="Филиал 2">
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-6 mb-3">
-                <div class="inputW">
-                  <div class="formInputName mb-2 text-uppercase fw-medium">
-                    Адрес филиала
-                  </div>
-                  <input type="text" class="formInput" value="Адрес">
-                </div>
-              </div>
-              <div class="col-lg-6 mb-3">
-                <div class="inputW">
-                  <div class="formInputName mb-2 text-uppercase fw-medium">
-                    Время работы
-                  </div>
-                  <input type="text" class="formInput" value="с 00:00 до 24:00">
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <div class="inputW">
-                  <div class="formInputName mb-2 text-uppercase fw-medium">
-                    Описание
-                  </div>
-                  <textarea name="descr-food" id="descr-food" cols="30" rows="2"
-                    class="formText formText--sm textarea-noscroll" placeholder="Краткое описание филиала."></textarea>
-                </div>
-              </div>
-            </div>
-
+      <div class="p-2 border-b-outline">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-1">
+          <div class="d-flex gap-2">
+            <span class="fw-medium">Иванов Иван Иванович</span>
+            <span class="text--gray fw-medium">Администратор</span>
           </div>
+          <div class="d-flex align-items-center gap-3">
+            <div class="d-flex gap-2">
+              <span class="fw-medium">20:39</span>
+              <span class="fw-medium">25.01.2024</span>
+            </div>
+            <button class="buttonRound">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#update"></use>
+              </svg>
+            </button>
+          </div>
+        </div><!-- /top -->
+        <div class="d-flex gap-2 flex-wrap">
+          <span class="fw-medium">Изменено:</span>
+          <span class="text-uppercase">ФОТО</span>
+          <span class="text-uppercase">Омарова Карина Мадиевна </span>
+        </div>
+      </div><!-- /item -->
+
+      <div class="p-2 border-b-outline">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-1">
+          <div class="d-flex gap-2">
+            <span class="fw-medium">Омарова Карина Мадиевна </span>
+            <span class="text--gray fw-medium">Пользователь</span>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <div class="d-flex gap-2">
+              <span class="fw-medium">16:15</span>
+              <span class="fw-medium">20.01.2024</span>
+            </div>
+            <button class="buttonRound">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#update"></use>
+              </svg>
+            </button>
+          </div>
+        </div><!-- /top -->
+        <div class="d-flex gap-2 flex-wrap">
+          <span class="fw-medium">Создано:</span>
+          <span class="text-uppercase">ФИО</span>
+          <span class="text-uppercase">Омарова Марина Мадиевна </span>
+          <span class="text-uppercase">НОМЕР ТЕЛЕФОНА</span>
+          <span class="text-uppercase">+ 7 (123) 456 78 80</span>
+          <span class="text-uppercase">EMAIL</span>
+          <span class="text-uppercase">omarova@address.com</span>
+          <span class="text-uppercase">ГОРОД</span>
+          <span class="text-uppercase">Астана</span>
+        </div>
+      </div><!-- /item -->
 
 
-        </div><!-- /filItem -->
 
-        <button class="button button--transparent-blue gap-2 px-3 mx-auto mt-4">
-          <svg>
-            <use xlink:href="img/icons/icons.svg#plus"></use>
-          </svg>
-          Добавить филиал
-        </button>
-
-
-      </div>
     </div>
 
   </div>
@@ -268,68 +186,68 @@
 		<div class="sidebarAdmin d-flex flex-column justify-content-between gap-4 px-2">
   <div class="sidebarAdminT">
     <img class="mx-auto sidebarAdminLogo" src="img/admin/logo/logo-admin-white.svg" alt="logo">
-    <button class="sidebarAdminBtn">
+    <button class="sidebarAdminBtn" type="button">
       <img src="img/icons/arrow-prev-white.svg" alt="arrow">
     </button>
     <ul class="sidebarAdminList">
       <li class="sidebarAdminItem active">
         <a href="#" class="sidebarAdminLink">
           <img src="img/admin/dashboard/dash-1.svg" alt="icon">
-          Дашборд
+          <span class="sidebarAdminItemName"> Дашборд</span>
         </a>
       </li>
       <li class="sidebarAdminItem">
         <a href="#" class="sidebarAdminLink">
           <img src="img/admin/dashboard/dash-2.svg" alt="icon">
-          Персонал
+          <span class="sidebarAdminItemName"> Персонал</span>
         </a>
       </li>
       <li class="sidebarAdminItem">
         <a href="#" class="sidebarAdminLink">
           <img src="img/admin/dashboard/dash-3.svg" alt="icon">
-          Меню
+          <span class="sidebarAdminItemName"> Меню</span>
         </a>
       </li>
       <li class="sidebarAdminItem">
         <a href="#" class="sidebarAdminLink">
           <img src="img/admin/dashboard/dash-4.svg" alt="icon">
-          О нас
+          <span class="sidebarAdminItemName"> О нас</span>
         </a>
       </li>
       <li class="sidebarAdminItem">
         <a href="#" class="sidebarAdminLink data-count" data-count="12">
           <img src="img/admin/dashboard/dash-5.svg" alt="icon">
-          Отзывы
+          <span class="sidebarAdminItemName"> Отзывы</span>
         </a>
       </li>
       <li class="sidebarAdminItem">
         <a href="#" class="sidebarAdminLink">
           <img src="img/admin/dashboard/dash-6.svg" alt="icon">
-          Акции
+          <span class="sidebarAdminItemName"> Акции</span>
         </a>
       </li>
       <li class="sidebarAdminItem">
         <a href="#" class="sidebarAdminLink">
           <img src="img/admin/dashboard/dash-7.svg" alt="icon">
-          Слайдер
+          <span class="sidebarAdminItemName"> Слайдер</span>
         </a>
       </li>
       <li class="sidebarAdminItem">
         <a href="#" class="sidebarAdminLink">
           <img src="img/admin/dashboard/dash-8.svg" alt="icon">
-          Гости
+          <span class="sidebarAdminItemName">Гости</span>
         </a>
       </li>
       <li class="sidebarAdminItem">
         <a href="#" class="sidebarAdminLink data-count" data-count="16">
           <img src="img/admin/dashboard/dash-9.svg" alt="icon">
-          Статистика
+          <span class="sidebarAdminItemName">Статистика</span>
         </a>
       </li>
       <li class="sidebarAdminItem">
         <a href="#" class="sidebarAdminLink">
           <img src="img/admin/dashboard/dash-10.svg" alt="icon">
-          Настройки
+          <span class="sidebarAdminItemName">Настройки</span>
         </a>
       </li>
 
@@ -357,25 +275,6 @@
   </div><!-- /sidebarBottomF -->
 
 
-</div>
-		<div class="footerAction border-t-outline">
-  <div class="container admin-container">
-    <div class="row">
-      <div class="col-lg-4">
-     
-      </div>
-      <div class="col-lg-8 mt-3 mt-lg-0">
-        <div class="d-flex justify-content-end gap-3 orderBtnW">
-          <button class="button button--lg button--transparent px-2 border-width-2">
-            Отменить
-          </button>
-          <button class="button button--lg button--blue px-2">
-            Сохранить
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 		<!-- modal -->
 <!-- modal-authorize-review -->
@@ -583,8 +482,9 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content p-0 pb-4">
 
-      <div class="d-flex align-items-center modalGrid-33 px-3 modal-head-sticky border-b-gray">
-        <div class="d-flex gap-2 modalCol33">
+      <div
+        class="d-flex align-items-start align-items-sm-center modalGrid-33 px-3 modal-head-sticky border-b-gray flex-column-reverse flex-sm-row">
+        <div class="d-flex justify-content-center justify-content-sm-start gap-2 modalCol33">
           <span>25.01.2024</span>
           <span>21:13</span>
         </div>
@@ -608,10 +508,10 @@
 
       <div class="d-block px-3">
 
-        <div class="d-flex align-items-center modalGrid-33 px-3 border-b-outline">
-          <span class="modalCol33">#162432</span>
+        <div class="d-flex align-items-center modalGrid-33 px-3 flex-column flex-sm-row border-b-outline">
+          <span class="modalCol33 text-center text-sm-start">#162432</span>
           <span class="modalCol33 text-center">Ожидание заказа</span>
-          <div class="personListW modalCol33 justify-content-end">
+          <div class="personListW modalCol33 justify-content-center justify-content-sm-end">
             <div class="personList">
               <a href="#" class="personItem">
                 <img src="img/admin/human/human.jpeg" alt="person">
@@ -936,7 +836,7 @@
         </button>
       </div>
 
-      <div class="pt-3 px-3">
+      <form class="pt-3 px-3" action="#">
         <span class="text-uppercase text--sm fw-medium mb-2 d-block">Официант</span>
         <div class="selectW">
           <select name="selectOficiant" id="selectOficiant" class="formSelect form-select">
@@ -952,8 +852,7 @@
             Сохранить
           </a>
         </div>
-      </div>
-
+      </form>
 
     </div>
   </div>
@@ -985,12 +884,12 @@
     <div class="modal-content p-0 pb-4">
 
       <div class="d-flex align-items-center modalGrid-33 px-3 modal-head-sticky border-b-gray">
-        <div class="d-flex gap-2 modalCol33">
+        <div class="d-flex gap-1 gap-sm-2 modalCol25 flex-wrap">
           <span>25.01.2024</span>
           <span>21:13</span>
         </div>
-        <span class="fw-bold h2 modalCol33 mx-auto mb-0 text-center">Столик №1 </span>
-        <button type="button" class="btn-close modalCol33 static-btn-close opacity-75" data-bs-dismiss="modal"
+        <span class="fw-bold h2 modalCol55 mx-auto mb-0 text-center">Название филиала </span>
+        <button type="button" class="btn-close modalCol20 static-btn-close opacity-75" data-bs-dismiss="modal"
           aria-label="Close" data-bs-target="#modal-check-history">
           <img src="img/icons/close-black.svg" alt="icon">
         </button>
@@ -1255,7 +1154,7 @@
 <div class="modal fade" id="modal-reserve-edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content p-0">
-      <div class="d-flex align-items-center modalGrid-33 px-3 py-2 border-b-gray">
+      <div class="d-flex align-items-center modalGrid-33 px-3 py-2 border-b-gray flex-column-reverse flex-sm-row">
         <button class="button button--blue modalCol33 px-2" data-bs-toggle="modal"
           data-bs-target="#modal-reserve-cancel">Отменить бронь</button>
         <span class="fw-bold h2 modalCol33 mx-auto mb-0 text-center">Столик №2</span>
@@ -1266,7 +1165,7 @@
       </div>
       <form class="modalForm px-3 py-3" action="#">
         <div class="row pb-3">
-          <div class="col-lg-4">
+          <div class="col-sm-4 mb-3 mb-sm-0">
             <div class="inputW">
               <div class="inputName text-uppercase fw-medium text--sm mb-2">
                 Время
@@ -1274,7 +1173,7 @@
               <input class="form-time formInput filled" type="time" value="16:44">
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-sm-4 mb-3 mb-sm-0">
             <div class="inputW">
               <div class="inputName text-uppercase fw-medium text--sm mb-2 ">
                 Дата
@@ -1282,7 +1181,7 @@
               <input class="form-date formInput filled" type="date" value="06.03.24">
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-sm-4">
             <div class="inputW">
               <div class="inputName text-uppercase fw-medium text--sm mb-2">
                 кол-во гостей
@@ -1296,7 +1195,7 @@
           </div>
         </div>
         <div class="row py-3">
-          <div class="col-lg-6">
+          <div class="col-sm-6 mb-3 mb-sm-0">
             <div class="inputW">
               <div class="inputName text-uppercase fw-medium text--sm mb-2">
                 Клиент
@@ -1304,7 +1203,7 @@
               <input class="formInput filled" type="text" placeholder="Имя Фамилия" value="Вера мартынова">
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-sm-6">
             <div class="inputW">
               <div class="inputName text-uppercase fw-medium text--sm mb-2">
                 номер телефона
@@ -1315,8 +1214,8 @@
         </div>
 
         <div class="d-flex gap-2 orderBtnW mt-4">
-          <button class="button button--lg button--transparent px-2" data-bs-dismiss="modal" aria-label="Close"
-            data-bs-target="#modal-reserve-edit">
+          <button type="button" class="button button--lg button--transparent px-2" data-bs-dismiss="modal"
+            aria-label="Close" data-bs-target="#modal-reserve-edit">
             Отменить
           </button>
           <button class="button button--lg button--blue px-2">
@@ -1333,15 +1232,15 @@
 <!-- modal-reserve-cancel -->
 <div class="modal fade" id="modal-reserve-cancel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content px-3 pb-3 pt-0">
+    <form class="modal-content px-3 pb-3 pt-0" action="#">
       <div class="fw-bold h2 mx-auto mb-3 text-center px-3 border-b-gray py-3 w-100">Столик №2</div>
       <div class="fw-bold h2 text-center mt-4">Уверены, что хотите отменить бронь?</div>
-      <div class="d-flex gap-2 orderBtnW mt-4">
-        <button class="button button--lg button--transparent px-2 border-width-2" data-bs-dismiss="modal"
-          aria-label="Close" data-bs-target="#modal-reserve-cancel">
+      <div class="d-flex gap-2 orderBtnW mt-4 flex-column flex-md-row">
+        <button class="button button--lg button--transparent px-2 border-width-2 w-100 w-md-auto"
+          data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-reserve-cancel">
           Нет, не отменять
         </button>
-        <button class="button button--lg button--blue px-2">
+        <button class="button button--lg button--blue px-2 w-100 w-md-auto">
           Да, отменить бронь
         </button>
       </div>
@@ -1349,7 +1248,7 @@
         data-bs-target="#modal-reserve-cancel">
         <img src="img/icons/close-black.svg" alt="icon">
       </button>
-    </div>
+    </form>
   </div>
 </div>
 
@@ -1359,8 +1258,8 @@
     <div class="modal-content p-0 pb-4">
       <div class="fw-bold h2 mx-auto mb-0 text-center py-3 border-b-outline w-100">Добавить сотрудника</div>
 
-      <div class="row mt-4 px-4">
-        <div class="col-lg-6">
+      <form class="row mt-4 px-4" action="#">
+        <div class="col-sm-6">
           <div class="addAdminPhoto">
             <input id="addAdminPhotoInput" type="file">
             <div class="addAdminPhotoW" style="background-image: url('img/icons/person-lg.svg');">
@@ -1385,14 +1284,14 @@
               </button>
 
               <!-- Картинка подгруженная -->
-              <div class="addAdminPhotoImgW">
+              <div class="addAdminPhotoImgW mb-3 mb-sm-0">
                 <img class="addAdminPhotoImg" src="img/admin/human/human.jpeg" alt="human">
               </div>
 
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-sm-6">
           <div class="inputW mb-3">
             <div class="inputName text-uppercase fw-medium text--sm mb-2">
               Фамилия
@@ -1412,7 +1311,7 @@
             <input class="formInput" type="text" placeholder="Отчество">
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-sm-6">
           <div class="inputW mb-3">
             <div class="inputName text-uppercase fw-medium text--sm mb-2">
               номер телефона
@@ -1420,7 +1319,7 @@
             <input class="formInput" type="tel" placeholder="+ 7 (_ _ _) _ _ _  _ _  _ _">
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-sm-6">
           <div class="inputW mb-3">
             <div class="inputName text-uppercase fw-medium text--sm mb-2">
               Должность
@@ -1431,7 +1330,7 @@
             </select>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-sm-6">
           <div class="inputW mb-3">
             <div class="inputName text-uppercase fw-medium text--sm mb-2">
               EMAIL
@@ -1439,7 +1338,7 @@
             <input class="formInput" type="email" placeholder="user@address.com">
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-sm-6">
           <div class="inputW mb-3">
             <div class="inputName text-uppercase fw-medium text--sm mb-2">
               Пароль
@@ -1447,7 +1346,7 @@
             <input class="formInput" type="password" placeholder="**********">
           </div>
         </div>
-      </div>
+      </form>
 
       <div class="d-flex gap-3 orderBtnW mt-4 px-4">
         <a class="button button--lg button--transparent border-width-2 px-2" href="#" data-bs-dismiss="modal"
@@ -1475,7 +1374,7 @@
 <!-- modal-edit-cat -->
 <div class="modal fade" id="modal-edit-cat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content p-0 pb-3">
+    <form class="modal-content p-0 pb-3" action="#">
       <div class="fw-bold h2 mx-auto mb-3 text-center px-3 border-b-gray py-3 w-100">Категории</div>
 
       <div class="d-flex gap-2 flex-wrap px-4 justify-content-center">
@@ -1589,7 +1488,6 @@
 
       </div>
 
-
       <div class="d-flex gap-2 orderBtnW mt-4 px-3">
         <button class="button button--lg button--transparent px-2 border-width-2" data-bs-dismiss="modal"
           aria-label="Close" data-bs-target="#modal-edit-cat">
@@ -1603,7 +1501,7 @@
         data-bs-target="#modal-edit-cat">
         <img src="img/icons/close-black.svg" alt="icon">
       </button>
-    </div>
+    </form>
   </div>
 </div>
 
@@ -1747,7 +1645,7 @@
 <!-- modal-edit-subcat -->
 <div class="modal fade" id="modal-edit-subcat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content p-0 pb-3">
+    <form class="modal-content p-0 pb-3" action="#">
       <div class="fw-bold h2 mx-auto mb-4 text-center px-3 border-b-gray py-3 w-100">Подкатегории</div>
 
       <div class="text--lg fw-bold px-3 text-center mb-3">Алкогольные напитки</div>
@@ -1863,7 +1761,7 @@
       </div>
 
       <div class="d-flex gap-2 orderBtnW mt-4 px-3">
-        <button class="button button--lg button--transparent px-2 border-width-2" data-bs-dismiss="modal"
+        <button type="button" class="button button--lg button--transparent px-2 border-width-2" data-bs-dismiss="modal"
           aria-label="Close" data-bs-target="#modal-edit-subcat">
           Отменить
         </button>
@@ -1875,7 +1773,7 @@
         data-bs-target="#modal-edit-subcat">
         <img src="img/icons/close-black.svg" alt="icon">
       </button>
-    </div>
+    </form>
   </div>
 </div>
 
@@ -2018,7 +1916,7 @@
 <!-- modal-add-stop -->
 <div class="modal fade" id="modal-add-stop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content p-0 pb-3">
+    <form class="modal-content p-0 pb-3" action="#">
       <div class="fw-bold h2 mx-auto mb-4 text-center px-3 border-b-gray py-3 w-100">Переместить в стоп-лист?</div>
 
       <div class="px-4">
@@ -2028,12 +1926,12 @@
           <span>Блюда из курицы</span>
         </div>
         <div class="text-center h2 mt-3">
-          Курица  в соусе 
+          Курица в соусе
         </div>
       </div>
 
       <div class="d-flex gap-2 orderBtnW mt-4 px-3">
-        <button class="button button--lg button--transparent px-2 border-width-2" data-bs-dismiss="modal"
+        <button type="button" class="button button--lg button--transparent px-2 border-width-2" data-bs-dismiss="modal"
           aria-label="Close" data-bs-target="#modal-add-stop">
           Отменить
         </button>
@@ -2045,6 +1943,92 @@
         data-bs-target="#modal-add-stop">
         <img src="img/icons/close-black.svg" alt="icon">
       </button>
+    </form>
+  </div>
+</div>
+
+<!-- modal-notification -->
+<div class="modal fade" id="modal-notification" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-0 pb-3">
+      <div class="d-flex justify-content-between align-items-center px-3 modal-head-sticky border-b-gray py-3">
+        <img src="img/icons/bell-blue.svg" alt="bell">
+        <span class="fw-bold h2 mb-0 text-center">Настроить уведомления</span>
+        <button type="button" class="btn-close static-btn-close opacity-75 m-0 w-auto" data-bs-dismiss="modal"
+          aria-label="Close" data-bs-target="#modal-notification">
+          <img src="img/icons/close-black.svg" alt="icon">
+        </button>
+      </div>
+      <div class="border-b-outline p-3 text--gray">
+        Уведомления приходят на указанный номер телефона через Телеграм
+      </div>
+
+      <div class="d-flex align-items-center p-3 gap-3 justify-content-between border-b-outline">
+        <span class="text--lg fw-medium">Сотрудник не принял заказ</span>
+        <div class="productIngredientItem p-0 m-0 justify-content-center">
+          <div class="productIngredientAction">
+            <input id="news_public" type="checkbox" hidden checked>
+            <label for="news_public">
+              <div class="rect"></div>
+            </label>
+          </div>
+        </div>
+      </div><!-- /item -->
+      <div class="d-flex align-items-center p-3 gap-3 justify-content-between border-b-outline">
+        <span class="text--lg fw-medium">Сотрудник не отреагировал на вызов к столу</span>
+        <div class="productIngredientItem p-0 m-0 justify-content-center">
+          <div class="productIngredientAction">
+            <input id="news_public_1" type="checkbox" hidden checked>
+            <label for="news_public_1">
+              <div class="rect"></div>
+            </label>
+          </div>
+        </div>
+      </div><!-- /item -->
+      <div class="d-flex align-items-center p-3 gap-3 justify-content-between border-b-outline">
+        <span class="text--lg fw-medium">Уведомление об опоздании на смену</span>
+        <div class="productIngredientItem p-0 m-0 justify-content-center">
+          <div class="productIngredientAction">
+            <input id="news_public_2" type="checkbox" hidden checked>
+            <label for="news_public_2">
+              <div class="rect"></div>
+            </label>
+          </div>
+        </div>
+      </div><!-- /item -->
+      <div class="d-flex align-items-center p-3 gap-3 justify-content-between border-b-outline">
+        <span class="text--lg fw-medium">Уведомление о новом отзыве</span>
+        <div class="productIngredientItem p-0 m-0 justify-content-center">
+          <div class="productIngredientAction">
+            <input id="news_public_3" type="checkbox" hidden checked>
+            <label for="news_public_3">
+              <div class="rect"></div>
+            </label>
+          </div>
+        </div>
+      </div><!-- /item -->
+      <div class="d-flex align-items-center p-3 gap-3 justify-content-between border-b-outline">
+        <span class="text--lg fw-medium">Уведомление о негативной оценке, поставленной сотруднику</span>
+        <div class="productIngredientItem p-0 m-0 justify-content-center">
+          <div class="productIngredientAction">
+            <input id="news_public_4" type="checkbox" hidden checked>
+            <label for="news_public_4">
+              <div class="rect"></div>
+            </label>
+          </div>
+        </div>
+      </div><!-- /item -->
+
+      <div class="d-flex gap-2 orderBtnW mt-4 px-3">
+        <button class="button button--lg button--transparent px-2" data-bs-dismiss="modal" aria-label="Close"
+          data-bs-target="#modal-notification">
+          Отменить
+        </button>
+        <button class="button button--lg button--blue px-2">
+          Сохранить
+        </button>
+      </div>
+
     </div>
   </div>
 </div>

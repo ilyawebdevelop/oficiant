@@ -4,32 +4,32 @@
     <div class="d-flex align-items-center justify-content-between adminHead flex-wrap gap-3">
       <a class="adminHeadLink" href="/admin-menu.html">
         <h1 class="h2 mb-0">
-          Редактировать блюдо
+          Добавить блюдо
         </h1>
       </a>
-      <button class="button gap-2 fw-medium stop-lg stop-lg--active">
+      <button class="button gap-2 fw-medium stop-lg stop-lg--active px-0">
         <svg>
           <use xlink:href="img/icons/icons.svg#stop-lg"></use>
         </svg>
-        <span>В стоп-листе</span>
+        <span>В стоп-лист</span>
       </button>
     </div>
 
     <div class="row mb-4">
-      <div class="col-lg-8">
+      <div class="col-md-8">
         <div class="inputW">
           <div class="formInputName mb-2 text-uppercase fw-medium">
             Название
           </div>
-          <input type="text" class="formInput filled" value="Курица в соусе">
+          <input type="text" class="formInput" placeholder="Название блюда">
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-md-4 mt-2 mt-md-0">
         <div class="inputW">
           <div class="formInputName mb-2 text-uppercase fw-medium">
             ID блюда
           </div>
-          <input type="text" class="formInput formInputId filled" placeholder="ID123456789">
+          <input type="text" class="formInput formInputId" placeholder="ID123456789">
         </div>
       </div>
     </div>
@@ -43,28 +43,28 @@
       <div class="tabs__content">
         <div class="tabs__panel">
           <div class="row mb-4">
-            <div class="col-lg-6">
+            <div class="col-md-6">
               <div class="inputW">
                 <div class="formInputName mb-2 text-uppercase fw-medium">
                   Категория
                 </div>
                 <div class="selectW">
-                  <select name="catSelect" id="catSelect" class="formSelect form-select filled">
+                  <select name="catSelect" id="catSelect" class="formSelect form-select">
                     <option value="Категория">Категория</option>
-                    <option value="Категория 1" selected>Горячие блюджа 1</option>
+                    <option value="Категория 1">Категория 1</option>
                     <option value="Категория 2">Категория 2</option>
                   </select>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-md-6 mt-2 mt-md-0">
               <div class="inputW">
                 <div class="formInputName mb-2 text-uppercase fw-medium">
                   Подкатегория
                 </div>
                 <div class="selectW">
-                  <select name="catSelect" id="catSelect" class="formSelect form-select filled">
-                    <option value="Блюда из курицы" selected>Блюда из курицы</option>
+                  <select name="catSelect" id="catSelect" class="formSelect form-select" disabled>
+                    <option value="Категория">Подкатегория</option>
                     <option value="Категория 1">Подкатегория 1</option>
                     <option value="Категория 2">Подкатегория 2</option>
                   </select>
@@ -73,77 +73,51 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-4">
-              <div class="addAdminPhoto h-auto">
+            <div class="col-md-4">
+              <div class="addAdminPhoto">
                 <input id="addAdminPhotoInput" type="file">
                 <div class="addAdminPhotoW foodPhoto" style="background-image: url('@img/icons/camera.svg');">
 
                   <!-- Загрузить фото -->
-                  <!-- <label
+                  <label
                     class="addAdminPhotoLabel button d-flex border-width-2 px-3 gap-2 align-items-center justify-content-center button--transparent-tetriary"
                     for="addAdminPhotoInput">
                     <svg>
                       <use xlink:href="img/icons/icons.svg#upload"></use>
                     </svg>
                     Загрузить фото
-                  </label> -->
+                  </label>
 
                   <!-- Удалить фото -->
-                  <button
+                  <!-- <button
                     class="addAdminPhotoLabel button d-flex border-width-2 px-3 gap-2 align-items-center justify-content-center button--transparent-tetriary">
                     <svg>
                       <use xlink:href="img/icons/icons.svg#delete-file"></use>
                     </svg>
                     Удалить фото
-                  </button>
+                  </button> -->
 
                   <!-- Картинка подгруженная -->
-                  <div class="addAdminPhotoImgW">
+                  <!-- <div class="addAdminPhotoImgW">
                     <img class="addAdminPhotoImg" src="@img/admin/human/human.jpeg" alt="human">
-                  </div>
+                  </div> -->
 
-                </div>
-              </div><!-- /addAdminPhoto -->
-
-              <div class="foodPhotoGal">
-
-                <div class="foodPhotoGalImg foodPhotoGalImg--gradient" style="background-color: var(--background);">
-                  <img src="@img/admin/intro/image-1.png" alt="image">
-                  <button class="foodPhotoRemove">
-                    <img src="@img/icons/remove.svg" alt="upload-photo">
-                  </button>
-                </div>
-
-                <div class="foodPhotoGalImg foodPhotoGalImg--gradient" style="background-color: var(--background);">
-                  <img src="@img/admin/intro/image-2.png" alt="image">
-                  <button class="foodPhotoRemove">
-                    <img src="@img/icons/remove.svg" alt="upload-photo">
-                  </button>
-                </div>
-
-                <div class="foodPhotoGalImg" style="background-color: var(--background);">
-                  <button class="foodPhotoGalUpload">
-                    <img src="@img/icons/upload-photo.svg" alt="upload-photo">
-                  </button>
                 </div>
               </div>
-
             </div>
-            <div class="col-lg-8">
+            <div class="col-md-8 mt-2 mt-md-0">
               <div class="inputW mb-3">
                 <div class="formInputName mb-2 text-uppercase fw-medium">
                   Описание
                 </div>
                 <textarea name="descr-food" id="descr-food" cols="30" rows="4"
-                  class="formText formText--sm textarea-noscroll filled">Нежное куриное филе подается с ароматным сочетанием трав и свежего лимона, которое не только дает блюду особенный вкус, но и придает ему свежесть и аппетитный аромат.
-Блюдо подается с сочным овощным гарниром, состоящим из свежих овощей, обжаренных на оливковом масле и посыпанных разнообразными специями.
-Оно идеально подходит для ужина или обеда в нашем ресторане. Насладитесь сочным и ароматным вкусом блюда, приготовленного с любовью и тщательно подобранными ингредиентами.</textarea>
+                  class="formText formText--sm textarea-noscroll" placeholder="Введите описание блюда"></textarea>
               </div>
               <div class="inputW mb-3">
                 <div class="formInputName mb-2 text-uppercase fw-medium">
                   Цена
                 </div>
-                <input type="text" class="formInput formInputPrice" placeholder="0" value="550" disabled>
+                <input type="text" class="formInput formInputPrice" placeholder="0" disabled>
               </div>
             </div>
           </div>
@@ -151,14 +125,14 @@
         <div class="tabs__panel">
 
           <div class="border-b-outline">
-            <div class="row pb-3 pt-3">
-              <div class="col-lg-4">
+            <div class="row pb-3 pt-3 d-none d-md-flex">
+              <div class="col-md-4">
                 <span class="text--lg fw-medium">Наименование</span>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <span class="text--lg fw-medium">Параметр</span>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <span class="text--lg fw-medium">Единица измерения</span>
               </div>
             </div>
@@ -166,17 +140,17 @@
 
           <div class="border-b-outline py-3">
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-md-4 mb-2 mb-md-0">
                 <div class="inputW">
                   <input type="text" class="formInput" placeholder="Наименование">
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4 mb-2 mb-md-0">
                 <div class="inputW">
                   <input type="text" class="formInput" placeholder="Параметр">
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <div class="inputW">
                   <input type="text" class="formInput" placeholder="Единица измерения">
                 </div>
@@ -186,17 +160,17 @@
 
           <div class="border-b-outline py-3">
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-md-4 mb-2 mb-md-0">
                 <div class="inputW">
                   <input type="text" class="formInput filled" placeholder="Наименование" value="Вес">
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4 mb-2 mb-md-0">
                 <div class="inputW">
                   <input type="text" class="formInput filled" placeholder="Параметр" value="250">
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <div class="inputW">
                   <input type="text" class="formInput filled" placeholder="Единица измерения" value="грамм">
                 </div>
@@ -214,7 +188,7 @@
         </div>
         <div class="tabs__panel">
           <div class="border-b-outline">
-            <div class="row pb-3 pt-3">
+            <div class="row pb-3 pt-3 d-none d-md-flex">
               <div class="col-lg-8">
                 <span class="text--lg fw-medium">Наименование</span>
               </div>
@@ -226,14 +200,14 @@
 
           <div class="border-b-outline py-3">
             <div class="row align-items-center">
-              <div class="col-lg-8">
+              <div class="col-md-8">
                 <div class="inputW">
                   <input type="text" class="formInput filled" value="Соль" placeholder="Наименование">
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <div class="row">
-                  <div class="col-lg-6">
+                  <div class="col-md-6">
                     <div class="productIngredientItem mb-0 justify-content-center">
                       <div class="productIngredientAction">
                         <input id="ingred_4" type="checkbox" hidden="" checked="">
@@ -243,7 +217,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-md-6">
                     <button class="buttonRound ml-auto">
                       <svg>
                         <use xlink:href="img/icons/icons.svg#remove"></use>
@@ -257,14 +231,14 @@
 
           <div class="border-b-outline py-3">
             <div class="row align-items-center">
-              <div class="col-lg-8">
+              <div class="col-md-8">
                 <div class="inputW">
                   <input type="text" class="formInput filled" value="Чеснок" placeholder="Наименование">
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <div class="row">
-                  <div class="col-lg-6">
+                  <div class="col-md-6">
                     <div class="productIngredientItem mb-0 justify-content-center">
                       <div class="productIngredientAction">
                         <input id="ingred_5" type="checkbox" hidden>
@@ -274,7 +248,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-md-6">
                     <button class="buttonRound ml-auto">
                       <svg>
                         <use xlink:href="img/icons/icons.svg#remove"></use>
@@ -288,14 +262,14 @@
 
           <div class="border-b-outline py-3">
             <div class="row align-items-center">
-              <div class="col-lg-8">
+              <div class="col-md-8">
                 <div class="inputW">
                   <input type="text" class="formInput" placeholder="Наименование">
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <div class="row">
-                  <div class="col-lg-6">
+                  <div class="col-md-6">
                     <div class="productIngredientItem mb-0 justify-content-center">
                       <div class="productIngredientAction">
                         <input id="ingred_8" type="checkbox" hidden checked>
@@ -305,7 +279,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-md-6">
                     <button class="buttonRound ml-auto">
                       <svg>
                         <use xlink:href="img/icons/icons.svg#remove"></use>

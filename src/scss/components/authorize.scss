@@ -2,9 +2,16 @@
   &Grid {
     display: grid;
     grid-template-columns: 50% 50%;
+    @media(max-width: 991px){
+     display: flex;
+     flex-direction: column-reverse;
+    }
   }
 
   &Img {
+    @media(max-width: 991px){
+      display: none;
+    }
     img {
       max-height: 100vh;
       width: 100%;
@@ -20,6 +27,9 @@
     @media(max-width: 1500px){
       padding-bottom: 40px;
     }
+    @media(max-width: 1400px){
+      padding-bottom: 20px;
+    }
     .headerLang {
       width: fit-content;
       margin-left: auto;
@@ -30,8 +40,8 @@
     padding-right: 23px;
     padding-top: 16px;
     margin-bottom: 7vh;
-    @media(max-width: 1500px){
-     
+    @media(max-width: 1400px){
+     margin-bottom: 2vh;
     }
   }
   &Form {
@@ -40,10 +50,20 @@
     margin-right: auto;
     padding-left: 50px;
     padding-right: 50px;
+    @media(max-width: 575px){
+      width: 100%;
+    }
+    @media(max-width: 420px){
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 }
 .authorizeFormLogo {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+  @media(max-width: 1400px){
+    margin-bottom: 20px;
+  }
 }

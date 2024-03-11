@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Новости"
+})
+
+<body>
+
+	<form class="wrapper wrapperAdmin" action="#">
+		<main class="main main-action">
+			@@include('html/admin/news-add-date.html',{})
+		</main>
+		@@include('html/footer-admin.html',{})
+		@@include('html/footer-admin-about.html',{})		
+	</form>
+	@@include('html/modal.html',{})
+
+	<script src="js/app.min.js"></script>
+
+
+</body>
+
+</html>

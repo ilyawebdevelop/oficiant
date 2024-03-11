@@ -119,13 +119,20 @@ table {
     padding-top: 36px;
     padding-bottom: 44px;
     padding-left: 200px;
+    @media(max-width: 991px){
+      padding-left: 72px;
+    }
   }
 }
 
 .main {
   flex: 1 0 auto;
+
   &-action {
     padding-bottom: 80px;
+    @media(max-width: 991px){
+      padding-bottom: 127px;
+    }
   }
 }
 
@@ -336,13 +343,16 @@ h5 {
   overflow: hidden;
   min-height: 50px;
   max-height: 100px;
+
   &.textarea-noscroll {
     resize: none;
     max-height: unset;
+
     &.auto {
       overflow-y: hidden;
     }
   }
+
   &.filled {
     background-color: transparent;
     border: 1px solid var(--black);
@@ -424,12 +434,15 @@ h5 {
     background-color: transparent;
     border: 1px solid var(--black);
   }
+
   &:disabled {
     color: var(--disabled);
+
     &::placeholder {
       color: var(--disabled);
     }
   }
+
   &.error {
     border-color: var(--error);
     background: rgba($color: #E02828, $alpha: .1);
@@ -468,9 +481,14 @@ h5 {
     background-size: 24px;
     background-position: right 16px center;
     padding-right: 40px;
+
     &:disabled {
       background-image: url('@img/icons/tenge-disabled.svg');
     }
+  }
+
+  &.min-w-160 {
+    min-width: 160px;
   }
 }
 
@@ -533,13 +551,17 @@ h5 {
 
     &::placeholder {
       color: var(--disabled);
-
+     
     }
   }
 
   &--transparent {
     border: none;
     background-color: transparent;
+    padding-left: 0;
+    &:focus {
+      border: none;
+    }
   }
 
   &.filled {
@@ -556,6 +578,10 @@ h5 {
   background-repeat: no-repeat;
   background-size: 22px;
 
+  &:disabled {
+    background-image: url('@img/icons/time-disabled.svg');
+  }
+
   &::-webkit-calendar-picker-indicator {
     opacity: 0;
     filter: invert(1);
@@ -569,6 +595,10 @@ h5 {
   background-position: right 16px center;
   background-repeat: no-repeat;
   background-size: 22px;
+
+  &:disabled {
+    background-image: url('@img/icons/date-disabled.svg');
+  }
 
   &::-webkit-calendar-picker-indicator {
     opacity: 0;
@@ -727,6 +757,7 @@ h5 {
 }
 
 .personImgW {
+  min-width: 40px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -909,14 +940,27 @@ h5 {
   padding-right: 50px;
   background: url('@img/icons/check-black.svg') no-repeat right 16px center / 24px;
 }
-.text-hidden { 
+
+.text-hidden {
   overflow: hidden;
   display: -webkit-box;
   /* Включаем флексбоксы */
   -webkit-box-orient: vertical;
+
   /* Вертикальная ориентация */
   &.rows-4 {
-      -webkit-line-clamp: 4;
-       height: 82px;
+    -webkit-line-clamp: 4;
+    height: 82px;
+  }
+
+  &.rows-2 {
+    -webkit-line-clamp: 2;
+    height: 42px;
+  }
+
+  &.active {
+    overflow: unset;
+    height: auto;
+    -webkit-line-clamp: unset;
   }
 }
